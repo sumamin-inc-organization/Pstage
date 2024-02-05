@@ -1,0 +1,35 @@
+{
+  "name": "pstage",
+  "version": "1.0.0",
+  "description": "Pstage LP",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumamin-inc-organization/pstage.git"
+  },
+  "author": "sumamin.inc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumamin-inc-organization/pstage/issues"
+  },
+  "homepage": "https://github.com/sumamin-inc-organization/pstage#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}
