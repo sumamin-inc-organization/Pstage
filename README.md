@@ -1,2 +1,2 @@
-# umeq
-梅Q ホームページ
+# Pstage
+Pstage LP
