@@ -1,0 +1,288 @@
+/* kvの設定 */
+.kv_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.kv_back--main {
+    position: absolute;
+    width: 71.1vw;
+    height: 71.1vw;
+    right: -17.6vw;
+    top: -136px;
+}
+
+.back_deco--01 {
+    position: absolute;
+    width: 23.5vw;
+    left: -11.3vw;
+    top: 105px;
+}
+
+.back_deco--02 {
+    position: absolute;
+    background-color: #D9ECDF;
+    border-radius: 9999px;
+    width: 41.7vw;
+    height: 41.7vw;
+    top: 487px;
+    left: -24vw;
+}
+
+.back_deco--03 {
+    position: absolute;
+    background-color: #D9ECDF;
+    border-radius: 9999px;
+    width: 42.6vw;
+    height: 42.6vw;
+    top: 945px;
+    right: -16vw;
+    z-index: -10;
+}
+
+.kv_wrapper {
+    margin: 71px  min(16.3vw, 300px);
+}
+
+.kv_upper {
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+}
+
+.kv_upper_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: -80px;
+}
+
+.kv_application {
+    position: relative;
+    background-image: url(../images/apply_back.svg);
+    width: 218px;
+    height: 218px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kv_application::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    border: 2px solid var(--white);
+
+}
+
+.kv_application::after {
+    position: absolute;
+    content: "";
+    width: 116px;
+    height: 83px;
+    background: url(../images/kv_product.png) no-repeat;
+    background-size: contain;
+    top: -20px;
+}
+
+.kv_application p {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.kv_application--desc {
+    position: relative;
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 14px;
+    color: var(--white);
+    margin-top: -12px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.kv_application--desc::before {
+    position: absolute;
+    content: "";
+    background-color: var(--green);
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    width: 40px;
+    height: 32px;
+    top: -28px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.kv_text01 {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.kv_text01::after, .kv_text01::before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    background-color: var(--orange);
+    border-radius: 4px;
+}
+
+.kv_text01::after {
+    left: -30px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.kv_text01::before {
+    right: -30px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.kv_text02 {
+    position: relative;
+    width: fit-content;
+    color: var(--orange);
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 14px;
+    border-bottom: 6px dotted var(--orange);
+    font-feature-settings: "palt"
+}
+
+.kv_text02::after {
+    content: url(../images/glass.svg);
+    position: absolute;
+    width: 26.6px;
+    top: -22px;
+    right: -20px;
+}
+
+.kv_text03 {
+    font-size: 54px;
+    margin-top: 26px;
+    font-feature-settings: "palt"
+}
+
+.kv_text03 p {
+    font-weight: 300;
+    position: relative;
+    width: fit-content;
+}
+
+.kv_text03 p::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background: var(--green);
+}
+
+.kv_text03 .small_text {
+    font-size: 30px;
+}
+
+.kv_text03 p .annotation {
+    position: relative;
+}
+
+.kv_text03 p .annotation::before {
+    position: absolute;
+    content: "※1";
+    font-size: 12px;
+    top: -12px;
+}
+
+.kv_logo {
+    width: 360px;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.kv_middle {
+    margin-top: 176px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.kv_middle_item {
+    position: relative;
+    background-color: var(--orange);
+    padding: 20px 28px 24px 28px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.kv_middle_item:last-child {
+    padding: 26px 28px 24px 28px;
+}
+
+.kv_middle_item .small_text {
+    font-size: 16px;
+}
+
+.kv_middle_item::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: var(--green);
+    border-radius: 9999px;
+    width: 30px;
+    height: 30px;
+    top: -18px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.kv_middle_item::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 22px;
+    height: 14px;
+    border-left: 3px solid var(--white);
+    border-bottom: 3px solid var(--white);
+    top: -12px;
+    left: 51%;
+    transform:translate(-50%, 0%) rotate(-45deg);
+    -webkit-transform: translate(-50%, 0%) rotate(-45deg);
+    -ms-transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.smartphone_img {
+    position: absolute;
+    width: 101px;
+    top: -80px;
+    right: -30px;
+}

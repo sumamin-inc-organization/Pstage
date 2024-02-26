@@ -1,5 +1,22 @@
+:root {
+    --black: #333333;
+    --white: #FFFFFF;
+    --orange: #FF8E66;
+    --green: #82C195;
+    --yallow: #FBCD00;
+}
+
 html {
     font-family: "Noto Sans JP", sans-serif;
+    color: var(--black);
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+main {
+    display: block;
     overflow-x: hidden;
     width: 100%;
 }
@@ -7,6 +24,7 @@ html {
 /* headerの設定 */
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -23,53 +41,10 @@ header {
 }
 
 .header_btn {
-    background-color: #FF8E66;
+    background-color: var(--orange);
     padding: 10px 11px;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 600;
     font-size: 18px;
-}
-
-/* kvの設定 */
-.kv_back {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
-
-.kv_back--main {
-    position: absolute;
-    width: 71.1vw;
-    height: 71.1vw;
-    right: -17.6vw;
-    top: -136px;
-}
-
-.back_deco--01 {
-    position: absolute;
-    width: 23.5vw;
-    left: -11.2vw;
-    top: 105px;
-}
-
-.back_deco--02 {
-    position: absolute;
-    background-color: #D9ECDF;
-    border-radius: 9999px;
-    width: 41.7vw;
-    height: 41.7vw;
-    top: 487px;
-    left: -24vw;
-}
-
-.back_deco--03 {
-    position: absolute;
-    background-color: #D9ECDF;
-    border-radius: 9999px;
-    width: 42.6vw;
-    height: 42.6vw;
-    top: 945px;
-    right: -16vw;
 }
