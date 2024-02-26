@@ -21,6 +21,14 @@ main {
     width: 100%;
 }
 
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
 /* headerの設定 */
 header {
     position: fixed;
