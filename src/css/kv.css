@@ -1,5 +1,6 @@
 /* kvの設定 */
 .kv_back {
+    overflow-x: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -461,10 +462,209 @@
 }
 
 @media (max-width: 767px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .kv_back {
+        overflow-x: hidden;
+        height: 140vh;
+    }
+
     .kv_back--main {
         width: 85vw;
         height: 85vw;
         right: -26.5vw;
+        top: -7.9vw;
+    }
+
+    .back_deco--02 {
+        width: 570px;
+        height: 570px;
+        top: 460px;
+        left: -80vw;
+    }
+
+    .kv_wrapper {
+        margin: 71px 5.1vw;
+    }
+
+    .kv_upper {
+        flex-direction: column;
+    }
+
+    .kv_text01 {
+        font-size: 15px;
+        margin-left: 14px;
+    }
+
+    .kv_text01::after, .kv_text01::before {
+        width: 20px;
+        height: 2px;
+        border-radius: 2px;
+    }
+
+    .kv_text01::after {
+        left: -18px;
+    }
+
+    .kv_text01::before {
+        right: -18px;
+    }
+
+    .kv_text02 {
+        font-size: 17px;
+    }
+
+    .kv_text02::after {
+        content: "";
+        background-image: url(../images/glass.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 24px;
+        top: 4px;
+        right: 20px;
+    }
+    
+    .kv_text03 {
+        font-size: 28px;
+    }
+
+    .kv_text03 p::before {
+        height: 5px;
+    }
+
+    .kv_text03 .small_text {
+        font-size: 20px;
+    }
+
+    .kv_text03 p .annotation::before {
+        font-size: 5px;
+        top: -1px;
+    }
+
+    .kv_logo {
+        margin-left: 0;
+        width: 194px;
+    }
+
+    .kv_upper_right {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .kv_application {
+        position: absolute;
+        top: -90px;
+        right: 0;
+        width: 139px;
+        height: 139px;
+        background-size: contain;
+        z-index: 10;
+    }
+
+    .kv_application p {
+        margin-top: 10px;
+    }
+
+    .kv_application::before {
+        width: 126px;
+        height: 126px;
+    }
+
+    .kv_application::after {
+        width: 74px;
+        height: 53px;
+    }
+
+    .kv_application p {
+        font-size: 17px;
+    }
+
+    .kv_application--desc {
+        margin-top: 62px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .kv_middle {
+        flex-direction: column;
+        width: 100%;
+        gap: 23px;
+        margin-top: 118px;
+    }
+
+    .kv_middle_item {
+        width: 100%;
+        font-size: 20px;
+        padding: 23px 0 22px 0;
+    }
+
+    .kv_middle_item:last-child {
+        padding: 23px 0 22px 0;
+    }
+
+    .kv_middle_item .small_text {
+        font-size: 14px;
+    }
+
+    .smartphone_img {
+        top: -36px;
+        right: -26px;
+    }
+
+    .smartphone_img img{
+        width: 48px;
+    }
+
+    .kv_overview {
+        font-size: 20px;
+        line-height: 42px;
+        letter-spacing: 0.04rem;
+    }
+
+    .kv_point p {
+        font-size: 27px;
+    }
+
+    .kv_point p .green {
+        font-size: 29px;
+    }
+
+    .kv_point img {
+        width: 44px;
+    }
+
+    .kv_bottom_content {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .kv_bottom_item {
+        width: 103px;
+        height: 103px;
+        min-width: 103px;
+        min-height: 103px;
+    }
+
+    .kv_bottom_item p {
+        width: 103px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .kv_bottom_item p .small_text {
+        font-size: 10px;
+    }
+
+    .kv_bottom_item .sankaku {
+        width: 12px;
+        bottom: 14px;
     }
 }
 
