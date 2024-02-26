@@ -1,0 +1,75 @@
+html {
+    font-family: "Noto Sans JP", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* headerの設定 */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header_logo {
+    width: 120px;
+}
+
+.header_btn {
+    background-color: #FF8E66;
+    padding: 10px 11px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* kvの設定 */
+.kv_back {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.kv_back--main {
+    position: absolute;
+    width: 71.1vw;
+    height: 71.1vw;
+    right: -17.6vw;
+    top: -136px;
+}
+
+.back_deco--01 {
+    position: absolute;
+    width: 23.5vw;
+    left: -11.2vw;
+    top: 105px;
+}
+
+.back_deco--02 {
+    position: absolute;
+    background-color: #D9ECDF;
+    border-radius: 9999px;
+    width: 41.7vw;
+    height: 41.7vw;
+    top: 487px;
+    left: -24vw;
+}
+
+.back_deco--03 {
+    position: absolute;
+    background-color: #D9ECDF;
+    border-radius: 9999px;
+    width: 42.6vw;
+    height: 42.6vw;
+    top: 945px;
+    right: -16vw;
+}
