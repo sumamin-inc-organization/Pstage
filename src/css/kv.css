@@ -30,7 +30,7 @@
     width: 41.7vw;
     height: 41.7vw;
     top: 487px;
-    left: -24vw;
+    left: -20vw;
 }
 
 .back_deco--03 {
@@ -39,7 +39,7 @@
     border-radius: 9999px;
     width: 42.6vw;
     height: 42.6vw;
-    top: 69vw;
+    top: 75vw;
     right: -16vw;
     z-index: -10;
 }
@@ -451,6 +451,11 @@
 }
 
 @media (max-width: 767px) {
+    .kv_back--main {
+        width: 85vw;
+        height: 85vw;
+        right: -26.5vw;
+    }
 }
 
 @media (min-width: 1500px) {
