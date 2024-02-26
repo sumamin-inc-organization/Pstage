@@ -29,8 +29,8 @@
     border-radius: 9999px;
     width: 41.7vw;
     height: 41.7vw;
-    top: 487px;
-    left: -20vw;
+    top: 510px;
+    left: -21vw;
 }
 
 .back_deco--03 {
@@ -39,7 +39,7 @@
     border-radius: 9999px;
     width: 42.6vw;
     height: 42.6vw;
-    top: 75vw;
+    top: 73vw;
     right: -16vw;
     z-index: -10;
 }
@@ -55,8 +55,7 @@
     display: flex;
     flex-direction: row;
     /* gap: min(3vw, 74px); */
-    justify-content: space-between;
-    max-width: 918px;
+    width: 100%;
 }
 
 .kv_upper_right {
@@ -64,8 +63,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    margin-bottom: -80px;
-    margin-left: 6vw;
+    margin-bottom: -58px;
+    margin-left: 6.2vw;
 }
 
 .kv_application {
@@ -229,7 +228,7 @@
 }
 
 .kv_middle {
-    margin-top: 176px;
+    margin-top: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
