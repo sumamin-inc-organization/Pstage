@@ -13,7 +13,7 @@
     width: 71.1vw;
     height: 71.1vw;
     right: -17.6vw;
-    top: -136px;
+    top: -9.9vw;
 }
 
 .back_deco--01 {
@@ -46,12 +46,17 @@
 
 .kv_wrapper {
     margin: 71px  min(16.3vw, 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .kv_upper {
     display: flex;
     flex-direction: row;
     /* gap: min(3vw, 74px); */
+    justify-content: space-between;
+    max-width: 918px;
 }
 
 .kv_upper_right {
@@ -60,7 +65,7 @@
     align-items: center;
     justify-content: end;
     margin-bottom: -80px;
-    margin-left: 6vw;
+    margin-right: 6vw;
 }
 
 .kv_application {
@@ -443,4 +448,22 @@
         width: 220px;
         line-height: 3.3vw;
     }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 1500px) {
+    .kv_upper {
+        justify-content: center;
+    }
+    
+    .kv_upper_right {
+        margin-right: 0;
+        margin-left: 100px;
+    }
+
+    /* .kv_middle_item {
+        margin: auto;
+    } */
 }
