@@ -58,6 +58,19 @@ header {
     cursor: pointer;
 }
 
+.cta_warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta_text {
+    font-size: 30px;
+    line-height: 63px;
+    letter-spacing: 0.02rem;
+    color: var(--orange);
+}
+
 .btn,
 a.btn,
 button.btn {
@@ -84,25 +97,64 @@ button.btn {
 
 a.cta_btn {
     position: relative;
-    font-size: 27px;
+    font-size: 45px;
     display: block;
-    padding: 16px 0 17px 0;
-    width: 347px;
+    padding: 24px 0 24px 0;
+    width: 570px;
 
     color: #fff;
     border-radius: 100vh;
     background: linear-gradient(135deg, #FF7C4D 0%, #FFB094 34%, #FFA382 40%, #FF936B 58%, #FF8559 70%, #FF7E4F 84%, #FF7C4D 100%);
-    -webkit-box-shadow: 0 5px 0 #D67756;
-    box-shadow: 0 5px 0 #D67756;
+    -webkit-box-shadow: 4px 8px 0 #D67756;
+    box-shadow: 4px 8px 0 #D67756;
+    background-position: 100% 50%;
+    background-size: 200% auto;
+    transition: background-position 0.3s ease-in-out, box-shadow 0.4s ease;
+}
+
+a.cta_btn:hover {
+    margin-top: 6px;
+    -webkit-box-shadow: 1px 2px 0 #D67756;
+    box-shadow: 1px 2px 0 #D67756;
+    text-decoration: none;
+    background-position: -100% -50%;
 }
 
 .cta_btn img {
     position: absolute;
     margin-bottom: -3px;
     margin-left: 30px;
-    width: 16px;
+    width: 26px;
     top: 50%;
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
+}
+
+@media (max-width: 767px) {
+    .cta_text {
+        font-size: 18px;
+        letter-spacing: 0.06rem;
+        line-height: 38px;
+    }
+
+    a.cta_btn {
+        font-size: 27px;
+        padding: 16px 0 17px 0;
+        width: 347px;
+        -webkit-box-shadow: 0 5px 0 #D67756;
+        box-shadow: 0 5px 0 #D67756;
+    }
+    
+    .cta_btn img {
+        margin-bottom: -3px;
+        margin-left: 30px;
+        width: 16px;
+    }
+
+    a.cta_btn:hover {
+        margin-top: 3px;
+        -webkit-box-shadow: 0 2px 0 #D67756;
+        box-shadow: 0 2px 0 #D67756;
+    }
 }
