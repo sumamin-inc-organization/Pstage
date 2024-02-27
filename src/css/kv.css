@@ -173,13 +173,13 @@
     font-feature-settings: "palt";
 }
 
-.kv_text02 p {
+/* .kv_text02 p {
     padding-bottom: 10px;
     background-image: radial-gradient(circle at calc(100% - 3px) calc(100% - 3px), var(--orange) 3px, transparent 3px) ;
     background-repeat: repeat-x;
     background-position: left bottom;
     background-size: 16px 6px;
-}
+} */
 
 .kv_text02::after {
     content: url(../images/glass.svg);
@@ -443,6 +443,10 @@
         font-size: 26px;
     }
 
+    .kv_text02 .dotted {
+        width: 326px;
+    }
+
     .kv_text03 {
         font-size: 48px;
     }
@@ -546,6 +550,14 @@
         letter-spacing: 0.03rem;
         margin-top: 10px;
     }
+/* 
+    .kv_text02 p {
+        padding-bottom: 7px;
+        background-image: radial-gradient(circle at calc(100% - 2px) calc(100% - 2px), var(--orange) 2px, transparent 2px);
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        background-size: 16px 6px;
+    } */
 
     .kv_text02::after {
         content: "";
