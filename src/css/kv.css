@@ -426,7 +426,7 @@
 
 @media (max-width: 1310px) {
     .kv_wrapper {
-        margin: 71px 6vw;
+        margin: 71px 6vw 50px 6vw;
     }
     
     .kv_upper {
