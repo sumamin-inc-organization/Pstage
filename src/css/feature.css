@@ -1,0 +1,434 @@
+#feature {
+    background-color: #F5F5F5;
+}
+
+.feature_headline {
+    position: relative;
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    padding: 18px 0 38px 0;
+}
+
+.feature_headline p {
+    font-size: 30px;
+    line-height: 71px;
+    letter-spacing: 0.04rem;
+}
+
+.feature_headline h2 {
+    display: inline;
+    font-size: 50px;
+    line-height: 71px;
+    letter-spacing: 0.04rem;
+    border-bottom: 6px solid var(--white);
+}
+
+.feature_headline .annotation {
+    position: relative;
+}
+
+.feature_headline .annotation::after {
+    position: absolute;
+    content: "※2";
+    font-size: 10px;
+    top: -2px;
+    right: -16px;
+    color: var(--white);
+}
+
+
+.feature_headline::before {
+    position: absolute;
+    content: "";
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    width: 40px;
+    height: 32px;
+    background-color: var(--green);
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.feature_grid {
+    display: grid;
+    grid-template-columns: 1fr 70vw 1fr;
+}
+
+.feature_content {
+    grid-column: 2 / 3;
+    margin-top: 68px;
+}
+
+.feature_h3 {
+    display: inline-block;
+    font-size: 44px;
+    line-height: 78px;
+    font-weight: bold;
+    /* margin-top: 88px; */
+    white-space: nowrap;
+    background: radial-gradient(circle at calc(100% - 1px) calc(100% - 1px), var(--green) 1px, transparent 1px) ,
+    radial-gradient(circle at 1px calc(100% - 1px), var(--green) 1px, transparent 1px) ,
+    linear-gradient(to bottom, #F5F5F5 calc(100% - 2px), transparent calc(100% - 2px)) ,
+    linear-gradient(to right, transparent 1px, var(--green) 1px, var(--green) calc(100% - 1px), transparent calc(100% - 1px));
+    display:inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.feature_h3 .numbering {
+    color: var(--green);
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 11px;
+}
+
+.graph_wrapper {
+    width: 100%;
+    margin-top: 34px;
+}
+
+.graph_wrapper img {
+    width: 100%;
+}
+
+.reason_item {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 31px;
+}
+
+.reason_item img {
+    width: 36.6vw;
+    height: fit-content;
+}
+
+.reason_item .reason_desc {
+    margin-top: -10px;
+}
+
+.reason_item .reason_desc .reason_text {
+    font-size: 18px;
+    letter-spacing: 0.04rem;
+    line-height: 40px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.reason_item .reason_desc .reason_note {
+    color: var(--green);
+    font-size: 14px;
+    letter-spacing: 0.04rem;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.reason_item .reason_desc .annotation {
+    position: relative;
+}
+
+.reason_item .reason_desc .annotation::after {
+    position: absolute;
+    content: "※3";
+    font-size: 10px;
+    color: var(--green);
+    top: 22px;
+    right: 67px;
+}
+
+.feature_graph {
+    margin-top: 39px;
+    background-image: url(../images/wavyline.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph_headline {
+    padding-top: 70px;
+    font-size: 30px;
+    line-height: 50px;
+    color: var(--green);
+    text-align: center;
+}
+
+.graph_text {
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center; 
+}
+
+.graph_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+    padding-top: 44px;
+    padding-bottom: 54px;
+}
+
+.graph_img_item {
+    width: 40%;
+}
+
+.graph_img_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph_img_item h5 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.graph_img_item img {
+    margin-top: 10px;
+}
+
+
+.graph_img_item p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 20px;
+    max-width: 280px;
+}
+
+.merit_text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 0.04rem;
+    margin-top: 30px;
+}
+
+.merit_graph h5 {
+    color: var(--green);
+    font-size: 30px;
+    line-height: 50px;
+    padding-top: 48px;
+    text-align: center;
+}
+
+.merit_graph img {
+    padding-top: 60px;
+    padding-bottom: 58px;
+    width: 80%;
+}
+
+.merit_caption {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.merit_bottom {
+    text-align: center;
+    margin-top: 43px;
+}
+
+.merit_bottom p {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.limit_text {
+    display: inline-block;
+    margin-top: 36px;
+    font-size: 18px;
+    letter-spacing: 0.04rem;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.limit_graph img {
+    padding-top: 54px;
+    padding-bottom: 65px;
+    width: 80%;
+}
+
+/* tb */
+@media (max-width: 1024px) {
+    .feature_headline p {
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 0.02rem;
+    }
+
+    .feature_headline h2 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.02rem;
+    }
+
+    .feature_grid {
+        grid-template-columns: 1fr 78vw 1fr;
+    }
+
+    .feature_h3 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .feature_h3 .numbering {
+        font-size: 16px;
+        margin-right: 7px;
+    }
+
+    .reason_item {
+        gap: 20px;
+    }
+
+    .reason_item .reason_desc .reason_text {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.02rem;
+    }
+
+    .reason_item .reason_desc .reason_note {
+        font-size: 10px;
+        line-height: 18px;
+        margin-top: 14px;
+    }
+
+    .reason_item .reason_desc .annotation::after {
+        top: 16px;
+        right: 42px;
+    }    
+
+    .merit_text {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.02rem;
+    }
+
+    .merit_caption {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+
+    .merit_bottom p {
+        font-size: 20px;
+        letter-spacing: 0.02rem;
+        line-height: 40px;
+    }
+
+    .limit_text {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.02rem;
+    }
+}
+
+/* sp */
+@media (max-width: 767px) {
+    .feature_grid {
+        grid-template-columns: 1fr 90vw 1fr;
+    }
+
+    .feature_content {
+        margin-top: 51px;
+    }
+
+    .feature_headline  {
+        padding: 10px 0 14px 0;
+    }
+
+    .feature_headline::before {
+        width: 16px;
+        height: 13px;
+        bottom: -13px;
+    }
+
+    .feature_headline p {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .feature_headline h2 {
+        font-size: 18px;
+        line-height: 28px;
+        border-bottom: 2px solid var(--white);
+    }
+
+    .feature_h3 {
+        /* margin-top: 51px; */
+        font-size: 30px;
+    }
+
+    .feature_h3 .numbering {
+        font-size: 22px;
+        letter-spacing: 0;
+        background: none;
+    } 
+
+    .reason_item {
+        flex-direction: column;
+    }
+
+    .reason_item img {
+        width: 100%;
+    }
+
+    .reason_item .reason_desc .reason_text {
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.04rem;
+        white-space: normal;
+    }
+
+    .reason_item .reason_desc .reason_note {
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.04rem;
+    }
+
+    .reason_item .reason_desc .annotation::after {
+        top: 22px;
+        right: 61px;
+    }
+
+    .merit_text {
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.04rem;
+    }
+
+    .merit_caption {
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0.04rem;
+    }
+
+    .merit_bottom {
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 0.04rem;
+    }
+
+    .limit_text {
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.04rem;
+    }
+}

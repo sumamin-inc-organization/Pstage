@@ -102,8 +102,8 @@
 .kv_application p {
     color: var(--white);
     font-size: 28px;
-    font-weight: 600;
-    margin-top: 16px;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 .kv_application--desc {
@@ -116,6 +116,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 26px;
+    font-weight: bold;
 }
 
 .kv_application--desc::before {
@@ -134,11 +135,9 @@
 
 .kv_text01 {
     position: relative;
-    display: inline-block;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-    margin-left: 60px;
 }
 
 .kv_text01::after, .kv_text01::before {
@@ -153,13 +152,13 @@
 }
 
 .kv_text01::after {
-    left: -30px;
+    left: 60px;
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg);
 }
 
 .kv_text01::before {
-    right: -30px;
+    right: 60px;
     -webkit-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
@@ -171,8 +170,15 @@
     font-size: 30px;
     font-weight: 600;
     margin-top: 14px;
-    border-bottom: 6px dotted var(--orange);
-    font-feature-settings: "palt"
+    font-feature-settings: "palt";
+}
+
+.kv_text02 p {
+    padding-bottom: 10px;
+    background-image: radial-gradient(circle at calc(100% - 3px) calc(100% - 3px), var(--orange) 3px, transparent 3px) ;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 16px 6px;
 }
 
 .kv_text02::after {
@@ -183,6 +189,19 @@
     right: -20px;
 }
 
+.kv_text02 svg{
+	width:127px;
+	height:22px;
+}
+
+.kv_text02 svg line{
+	fill: none;
+	stroke: var(--orange);
+	stroke-width: 11;
+	stroke-linecap: round;
+	stroke-dasharray: 0.5, 22;
+}
+
 .kv_text03 {
     font-size: 54px;
     margin-top: 26px;
@@ -190,7 +209,7 @@
 }
 
 .kv_text03 p {
-    font-weight: 300;
+    font-weight: 400;
     position: relative;
     width: fit-content;
 }
@@ -304,6 +323,7 @@
     font-size: 30px;
     font-weight: 600;
     text-align: center;
+    letter-spacing: 0.04rem;
 }
 
 .kv_overview .underline {
@@ -472,34 +492,39 @@
 
     .kv_back {
         overflow-x: hidden;
-        height: 140vh;
+        height: 160vh;
     }
 
     .kv_back--main {
         width: 85vw;
         height: 85vw;
         right: -26.5vw;
-        top: -7.9vw;
+        top: -5.3vw;
     }
 
     .back_deco--02 {
-        width: 570px;
-        height: 570px;
-        top: 460px;
-        left: -80vw;
+        width: 620px;
+        height: 620px;
+        top: 497px;
+        left: -91vw;
     }
 
     .kv_wrapper {
-        margin: 71px 5.1vw;
+        margin: 83px 5.6vw;
     }
 
     .kv_upper {
         flex-direction: column;
     }
 
+    .kv_upper_left {
+        width: fit-content;
+    }
+
     .kv_text01 {
         font-size: 15px;
-        margin-left: 14px;
+        display: inline-flex;
+        margin-left: 17px;
     }
 
     .kv_text01::after, .kv_text01::before {
@@ -509,15 +534,17 @@
     }
 
     .kv_text01::after {
-        left: -18px;
+        left: -17px;
     }
 
     .kv_text01::before {
-        right: -18px;
+        right: -17px;
     }
 
     .kv_text02 {
         font-size: 17px;
+        letter-spacing: 0.03rem;
+        margin-top: 10px;
     }
 
     .kv_text02::after {
@@ -533,6 +560,8 @@
     
     .kv_text03 {
         font-size: 28px;
+        margin-top: 20px;
+        font-feature-settings: normal;
     }
 
     .kv_text03 p::before {
@@ -541,6 +570,11 @@
 
     .kv_text03 .small_text {
         font-size: 20px;
+    }
+
+    .kv_text03 p {
+        margin-top: 10px;
+        font-weight: 400;
     }
 
     .kv_text03 p .annotation::before {
@@ -560,8 +594,8 @@
 
     .kv_application {
         position: absolute;
-        top: -90px;
-        right: 0;
+        top: -96px;
+        right: -10px;
         width: 139px;
         height: 139px;
         background-size: contain;
@@ -569,7 +603,8 @@
     }
 
     .kv_application p {
-        margin-top: 10px;
+        margin-top: 2px;
+        font-weight: bold;
     }
 
     .kv_application::before {
@@ -626,10 +661,13 @@
         font-size: 20px;
         line-height: 42px;
         letter-spacing: 0.04rem;
+        font-weight: bold;
+        margin-bottom: 42px;
     }
 
     .kv_point p {
         font-size: 27px;
+        font-weight: bold;
     }
 
     .kv_point p .green {
@@ -638,6 +676,10 @@
 
     .kv_point img {
         width: 44px;
+    }
+
+    .kv_bottom {
+        margin-top: 40px;
     }
 
     .kv_bottom_content {
@@ -681,4 +723,10 @@
     /* .kv_middle_item {
         margin: auto;
     } */
+}
+
+@media (max-width: 380px) {
+    .kv_point p {
+        font-size: 26px;
+    }
 }
