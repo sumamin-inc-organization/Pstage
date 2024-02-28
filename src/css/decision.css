@@ -208,6 +208,10 @@
 }
 /*sp*/
 @media (max-width: 767px) {
+    #decision {
+        padding-bottom: 48px;
+    }
+
     .decision_back {
         position: relative;
         z-index: -1;

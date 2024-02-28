@@ -281,10 +281,10 @@
     
     .flow_upper_text {
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         line-height: 35px;
-        letter-spacing: 0.04rem;
+        letter-spacing: 0.02rem;
         margin-top: 50px;
     }
     
@@ -378,7 +378,7 @@
     
     
     .supprt_upper {
-        margin-top: 64px;
+        margin-top: 46px;
         color: var(--orange);
         text-align: center;
     }
@@ -416,7 +416,7 @@
     
     .step_content {
         position: relative;
-        margin-top: 53px;
+        margin-top: 34px;
         width: 305px;
     }
     
@@ -501,5 +501,12 @@
         font-weight: bold;
         letter-spacing: 0.04rem;
         line-height: 35px;
+    }
+}
+
+@media (max-width: 380px) {
+    .flow_upper_text {
+        font-size: 15px;
+        letter-spacing: 0.01rem;
     }
 }
