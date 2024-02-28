@@ -4,6 +4,7 @@
     --orange: #FF8E66;
     --green: #82C195;
     --yallow: #FBCD00;
+    --light-yallow: #FFF766;
 }
 
 html {
@@ -58,6 +59,7 @@ header {
     cursor: pointer;
 }
 
+/*ctaの設定*/
 .cta_warpper {
     display: flex;
     flex-direction: column;
@@ -109,11 +111,12 @@ a.cta_btn {
     box-shadow: 4px 8px 0 #D67756;
     background-position: 100% 50%;
     background-size: 200% auto;
-    transition: background-position 0.3s ease-in-out, box-shadow 0.4s ease;
+    transition: background-position 0.3s ease-in-out, box-shadow 0.4s ease, margin 0.4s ease;
 }
 
 a.cta_btn:hover {
     margin-top: 6px;
+    margin-bottom: -6px;
     -webkit-box-shadow: 1px 2px 0 #D67756;
     box-shadow: 1px 2px 0 #D67756;
     text-decoration: none;
@@ -129,6 +132,71 @@ a.cta_btn:hover {
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
+}
+
+/*見出しの設定*/
+.headline {
+    position: relative;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    padding: 18px 0 38px 0;
+}
+
+.headline h2 {
+    position: relative;
+}
+
+.headline p {
+    font-size: 30px;
+    line-height: 71px;
+    letter-spacing: 0.04rem;
+}
+
+.headline h2 {
+    display: inline;
+    font-size: 50px;
+    line-height: 71px;
+    letter-spacing: 0.04rem;
+}
+
+.headline h2::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 6px;
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.headline::before {
+    position: absolute;
+    content: "";
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    width: 40px;
+    height: 32px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+@media (max-width: 1024px) {
+    .headline p {
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 0.02rem;
+    }
+
+    .headline h2 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.02rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -156,5 +224,50 @@ a.cta_btn:hover {
         margin-top: 3px;
         -webkit-box-shadow: 0 2px 0 #D67756;
         box-shadow: 0 2px 0 #D67756;
+    }
+
+    .headline  {
+        padding: 10px 0 14px 0;
+    }
+
+    .headline::before {
+        width: 16px;
+        height: 13px;
+        bottom: -13px;
+    }
+
+    .headline p {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .headline h2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .headline h2::before {
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+    }
+}
+
+/*レイアウトの設定*/
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 70vw 1fr;
+}
+
+@media (max-width: 1024px) {
+    .content_grid {
+        grid-template-columns: 1fr 78vw 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .content_grid {
+        grid-template-columns: 1fr 90vw 1fr;
     }
 }

@@ -1,5 +1,6 @@
 #feature {
     background-color: #F5F5F5;
+    padding-bottom: 94px;
 }
 
 .feature_headline {
@@ -22,7 +23,6 @@
     font-size: 50px;
     line-height: 71px;
     letter-spacing: 0.04rem;
-    border-bottom: 6px solid var(--white);
 }
 
 .feature_headline .annotation {
@@ -160,7 +160,6 @@
 
 .reason_item img {
     width: 36.6vw;
-    height: fit-content;
 }
 
 .reason_item .reason_desc {
@@ -427,7 +426,6 @@
     .feature_headline h2 {
         font-size: 18px;
         line-height: 28px;
-        border-bottom: 2px solid var(--white);
     }
 
     .feature_head {

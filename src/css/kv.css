@@ -46,7 +46,8 @@
 }
 
 .kv_wrapper {
-    margin: 71px  min(16.3vw, 240px);
+    margin: 71px  15vw;
+    /* margin: 71px  min(16.3vw, 240px); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,6 +325,7 @@
     font-weight: 600;
     text-align: center;
     letter-spacing: 0.04rem;
+    line-height: 56px;
 }
 
 .kv_overview .underline {
@@ -724,12 +726,30 @@
 
 @media (min-width: 1500px) {
     .kv_upper {
-        justify-content: center;
+        /* justify-content: center; */
     }
     
     .kv_upper_right {
         margin-right: 0;
         margin-left: 160px;
+    }
+
+    .kv_middle {
+        justify-content: space-between;
+        gap: unset;
+        width: 100%;
+    }
+
+    .kv_middle_item {
+        width: 20vw;
+    }
+
+    .kv_bottom {
+        width: 100%;
+    }
+
+    .kv_bottom_content {
+        justify-content: space-between;
     }
 
     /* .kv_middle_item {
