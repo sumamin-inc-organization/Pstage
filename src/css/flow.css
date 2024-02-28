@@ -1,0 +1,233 @@
+.flow_headline {
+    background-color: var(--orange);
+}
+
+.flow_headline::before {
+    background-color: var(--orange);
+}
+
+.flow_grid {
+    background-color: #FFDDD1;
+}
+
+.flow_content {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 103px;
+}
+
+.flow_upper_text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 0.04rem;
+    margin-top: 86px;
+}
+
+.flow_upper_title {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0.04rem;
+    text-align: center;
+    margin-top: 52px;
+}
+
+.flow_upper_title::before, .flow_upper_title::after {
+    content: '';
+    position: absolute;
+    top: 84%;
+    display: inline-block;
+    width: 26px;
+    height: 2px;
+    background-color: var(--orange);
+    border-radius: 4px;
+}
+
+.flow_upper_title::before {
+    left: -28px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.flow_upper_title::after {
+    right: -28px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.flow_figure {
+    margin-top: 40px;
+    margin-bottom: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flow_figure_item {
+    position: relative;
+    width: 23%;
+}
+
+.flow_figure_item:not(:last-child)::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image:  url(../images/arrow_02.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 3.66vw;
+    height: 1.52vw;
+    top: 50%;
+    right: -18%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+}
+
+.flow_figure_item img {
+    width: 100%;
+}
+
+.flow_support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+    padding-bottom: 82px;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+.supprt_upper {
+    margin-top: 75px;
+    color: var(--orange);
+    text-align: center;
+}
+
+.supprt_upper p {
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    line-height: 71px;
+}
+
+.supprt_upper h3 {
+    margin-top: 24px;
+    font-size: 58px;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    line-height: 77px;
+}
+
+.step_content {
+    position: relative;
+    margin-top: 53px;
+    width: 540px;
+}
+
+.step_content::before {
+    position: absolute;
+    content: "";
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    background-color: var(--orange);
+    width: 60px;
+    height: 38px;
+    bottom: -90px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.step_item {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.step_item .numbering {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange);
+    border-radius: 9999px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step_item:not(:last-child) .numbering::after {
+    position: absolute;
+    height: 1em;
+    width: 56px;
+    bottom: -34px;
+    content: '';
+    background: radial-gradient(var(--orange) 20%, transparent 30%) center/ 1em;
+    transform: rotate(90deg);
+    flex: auto;
+}
+
+.step_item .numbering .upper {
+    font-size: 15px;
+    letter-spacing: 0.04rem;
+}
+
+.step_item .numbering .bottom {
+    font-size: 31px;
+    letter-spacing: 0.02rem;
+    line-height: 32px;
+}
+
+.step_item .text p {
+    margin-top: 18px;
+    font-size: 30px;
+    letter-spacing: 0.04rem;
+    line-height: 48px;
+}
+
+.step_item .text p .bg_orange {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.supprt_bottom {
+    margin-top: 120px;
+}
+
+.supprt_bottom p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    line-height: 57px;
+}
+
+.supprt_bottom p .orange {
+    color: var(--orange);
+}
+
+/*tb*/
+@media (max-width: 1024px) {
+
+}
+
+/*sp*/
+@media (max-width: 767px) {
+
+}

@@ -71,6 +71,7 @@ header {
     line-height: 63px;
     letter-spacing: 0.02rem;
     color: var(--orange);
+    font-weight: bold;
 }
 
 .btn,
@@ -255,7 +256,7 @@ a.cta_btn:hover {
 }
 
 /*レイアウトの設定*/
-.content-grid {
+.content_grid {
     display: grid;
     grid-template-columns: 1fr 70vw 1fr;
 }
