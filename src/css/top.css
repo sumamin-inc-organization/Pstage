@@ -142,6 +142,7 @@ a.cta_btn:hover {
     text-align: center;
     width: 100%;
     padding: 18px 0 38px 0;
+    font-weight: bold;
 }
 
 .headline h2 {
