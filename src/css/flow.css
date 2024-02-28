@@ -117,10 +117,36 @@
 }
 
 .supprt_upper p {
+    position: relative;
+    display: inline;
     font-size: 44px;
     font-weight: bold;
     letter-spacing: 0.12rem;
     line-height: 71px;
+}
+
+.supprt_upper p::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/kirakira_01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 51px;
+    top: -20px;
+    left: -55px;
+}
+
+.supprt_upper p::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/kirakira_02.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 42px;
+    bottom: -5px;
+    right: -40px;
 }
 
 .supprt_upper h3 {
@@ -224,10 +250,256 @@
 
 /*tb*/
 @media (max-width: 1024px) {
+    .flow_upper_text {
+        font-size: 16px;
+        letter-spacing: 0.02rem;
+    }
 
+    .supprt_upper p {
+        font-size: 38px;
+    }
+
+    .supprt_upper h3 {
+        font-size: 50px;
+    }
+
+    .step_item .text p {
+        font-size: 26px;
+    }
+
+    .supprt_bottom p {
+        font-size: 28px;
+        line-height: 50px;
+    }
 }
 
 /*sp*/
 @media (max-width: 767px) {
+    .flow_content {
+        padding-bottom: 65px;
+    }
+    
+    .flow_upper_text {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 35px;
+        letter-spacing: 0.04rem;
+        margin-top: 50px;
+    }
+    
+    .flow_upper_title {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 28px;
+        letter-spacing: 0.04rem;
+        text-align: center;
+        margin-top: 52px;
+    }
+    
+    .flow_upper_title::before, .flow_upper_title::after {
+        content: '';
+        position: absolute;
+        top: 84%;
+        display: inline-block;
+        width: 26px;
+        height: 2px;
+        background-color: var(--orange);
+        border-radius: 4px;
+    }
+    
+    .flow_upper_title::before {
+        left: -28px;
+        -webkit-transform: rotate(60deg);
+        transform: rotate(60deg);
+    }
+    
+    .flow_upper_title::after {
+        right: -28px;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+    }
+    
+    .flow_figure {
+        margin-top: 20px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5.12vw;
+        width: 100%;
+    }
+    
+    .flow_figure_item {
+        position: relative;
+        width: 47%;
+    }
 
+    .flow_figure_item:not(:first-child)::before {
+        position: absolute;
+        display: block;
+        content: "";
+        background-image:  url(../images/arrow_02.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        width: 35px;
+        height: 16px;
+        top: 50%;
+        left: -14%;
+        transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+    }
+    
+    .flow_figure_item:not(:last-child)::after {
+        display: none;
+    }
+    
+    .flow_figure_item img {
+        width: 100%;
+    }
+    
+    .flow_support {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 46px;
+        padding-bottom: 46px;
+        background-color: var(--white);
+        border-radius: 10px;
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    
+    .supprt_upper {
+        margin-top: 64px;
+        color: var(--orange);
+        text-align: center;
+    }
+    
+    .supprt_upper p {
+        position: relative;
+        display: inline;
+        font-size: 27px;
+        font-weight: bold;
+        letter-spacing: 0.12rem;
+        line-height: 44px;
+    }
+    
+    .supprt_upper p::before {
+        width: 32px;
+        height: 32px;
+        top: -10px;
+        left: -34px;
+    }
+    
+    .supprt_upper p::after {
+        width: 21px;
+        height: 26px;
+        bottom: -3px;
+        right: -24px;
+    }
+    
+    .supprt_upper h3 {
+        margin-top: 18px;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 0.04rem;
+        line-height: 48px;
+    }
+    
+    .step_content {
+        position: relative;
+        margin-top: 53px;
+        width: 305px;
+    }
+    
+    .step_content::before {
+        position: absolute;
+        content: "";
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+        background-color: var(--orange);
+        width: 37px;
+        height: 24px;
+        bottom: -70px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+    }
+    
+    .step_item {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 14px;
+    }
+    
+    .step_item .numbering {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: var(--orange);
+        border-radius: 9999px;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .step_item:not(:last-child) .numbering::after {
+        position: absolute;
+        height: 1em;
+        width: 17px;
+        bottom: -23px;
+        content: '';
+        background: radial-gradient(var(--orange) 20%, transparent 30%) center/ 1em;
+        background-size: 7px 7px;
+        background-repeat: repeat-x;
+        transform: rotate(90deg);
+        flex: auto;
+    }
+    
+    .step_item .numbering .upper {
+        font-size: 10px;
+        letter-spacing: 0.04rem;
+    }
+    
+    .step_item .numbering .bottom {
+        font-size: 20px;
+        letter-spacing: 0.02rem;
+        line-height: 20px;
+    }
+    
+    .step_item .text p {
+        margin-top: 12px;
+        font-size: 16px;
+        letter-spacing: 0.04rem;
+        line-height: 27px;
+    }
+    
+    .step_item .text p .bg_orange {
+        background-color: var(--orange);
+        color: var(--white);
+    }
+    
+    .supprt_bottom {
+        margin-top: 90px;
+    }
+    
+    .supprt_bottom p {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.04rem;
+        line-height: 35px;
+    }
 }

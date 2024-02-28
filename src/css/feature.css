@@ -107,9 +107,9 @@
 .feature_h3 {
     display: inline-flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     font-size: 44px;
-    line-height: 78px;
+    line-height: 60px;
     font-weight: bold;
     /* margin-top: 88px; */
     white-space: nowrap;
@@ -405,7 +405,7 @@
     }
 
     .feature_content {
-        margin-top: 51px;
+        margin-top: 32px;
     }
 
     .feature_headline  {
@@ -478,6 +478,7 @@
 
     .reason_item {
         flex-direction: column;
+        gap: 33px;
     }
 
     .reason_item img {
