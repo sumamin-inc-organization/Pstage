@@ -1,0 +1,95 @@
+#price {
+    font-weight: bold;
+    padding-top: 86px;
+}
+
+.price_head_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price_headline {
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.price_headline::after {
+    /* position: absolute;
+    content: "";
+    background-image: url(../images/price_underline.svg);
+    width: 243px;
+    height: 8px;
+    bottom: -8px;
+    left: ; */
+}
+
+.price_content {
+    grid-column: 2 / 3;
+}
+
+.price_upper {
+    margin-top: 24px;
+    color: var(--white);
+    background-image: url(../images/course_01.svg);
+    background-position: top center;
+    background-repeat:no-repeat;
+    width: 960px;
+    height: 185px;
+}
+
+.price_upper_title {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 54px;
+}
+.price_upper_title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    bottom: -7px;
+    width: 670px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--white);
+} 
+
+.price_upper_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px;
+    padding-top: 40px;
+}
+
+.price_upper_content p {
+    font-size: 40px;
+    line-height: 54px;
+}
+
+.yallow_underline {
+    position: relative;
+}
+
+.yallow_underline::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    bottom: -7px;
+    width: 108%;
+    height: 8px;
+    border-radius: 8px;
+    background: #FBD83B;
+}
