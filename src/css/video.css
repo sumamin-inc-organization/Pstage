@@ -19,6 +19,7 @@
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     z-index: -1;
+    width: 100%;
 }
 
 .video_headline_wrapper {

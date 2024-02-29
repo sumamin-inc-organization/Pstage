@@ -45,6 +45,16 @@
     z-index: -10;
 }
 
+.dotted_sp_01 {
+    width: 88px;
+    height: 3.67px;
+}
+
+.dotted_sp_02 {
+    width: 139px;
+    height: 3.67px;
+}
+
 .kv_wrapper {
     margin: 71px  15vw;
     /* margin: 71px  min(16.3vw, 240px); */
@@ -653,6 +663,7 @@
         width: 100%;
         font-size: 20px;
         padding: 23px 0 22px 0;
+        height: 65px;
     }
 
     .kv_middle_item:last-child {

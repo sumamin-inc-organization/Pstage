@@ -290,7 +290,7 @@
     display: block;
     margin-top: 18px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .merit_bottom {
@@ -486,9 +486,9 @@
     }
 
     .reason_item .reason_desc .reason_text {
-        font-size: 16px;
+        font-size: min(3.9vw, 15.5px);
         line-height: 40px;
-        letter-spacing: 0.04rem;
+        letter-spacing: 0.01rem;
         white-space: normal;
     }
 
@@ -504,9 +504,12 @@
     }
 
     .merit_text {
-        font-size: 16px;
+        font-size: min(3.9vw, 15.5px);
         line-height: 40px;
-        letter-spacing: 0.04rem;
+        letter-spacing: 0.01rem;
+        /* font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.04rem; */
     }
 
     .merit_caption {
@@ -521,9 +524,18 @@
         letter-spacing: 0.04rem;
     }
 
+    .merit_bottom p {
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 0.02rem;
+    }
+
     .limit_text {
-        font-size: 16px;
+        font-size: min(3.9vw, 15.5px);
         line-height: 40px;
-        letter-spacing: 0.04rem;
+        letter-spacing: 0.01rem;
+        /* font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.04rem; */
     }
 }
