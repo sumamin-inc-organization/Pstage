@@ -5,6 +5,7 @@
     --orange: #FF8E66;
     --light-orange: #FFDDD1;
     --green: #82C195;
+    --light-green: #D9ECDF;
     --yallow: #FBCD00;
     --light-yallow: #FFF766;
 }
@@ -14,7 +15,7 @@ html {
     color: var(--black);
 }
 
-html,body {
+html, body {
     overflow-x: hidden;
 }
 

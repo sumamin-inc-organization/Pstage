@@ -260,16 +260,17 @@
 .kv_middle_item {
     position: relative;
     background-color: var(--orange);
-    padding: 20px 28px 24px 28px;
+    padding: 0 28px 0 28px;
+    height: 99px;
     font-size: 24px;
     font-weight: 600;
     color: var(--white);
     text-align: center;
+    vertical-align: middle;
     border-radius: 10px;
-}
-
-.kv_middle_item:last-child {
-    padding: 26px 28px 24px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .kv_middle_item .small_text {

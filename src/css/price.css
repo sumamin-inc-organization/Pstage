@@ -29,6 +29,7 @@
     height: 574px;
     top: 1609px;
     right: -243px;
+    z-index: -2;
 }
 
 .price_head_wrapper {
