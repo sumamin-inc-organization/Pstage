@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <script defer src="index.17fee828e0c0bc21752e.js"></script><link href="index.8ce3f61e14746cbd240d.css" rel="stylesheet"></head>
+    <script defer src="index.9d81f4045a031c6d6dc8.js"></script><link href="index.29c3b358416a08e33059.css" rel="stylesheet"></head>
     <body>
         <header>
             <div class="header_inner">
@@ -40,9 +40,9 @@
                                 <p class="pc">早期段階のがんリスクを示唆</p>
                                 <img class="pc dotted" src="img/dotted_pc.svg" alt="">
                                 <p class="sp">早期段階の</p>
-                                <img class="sp" src="img/dotted_sp_01.svg" alt="">
+                                <img class="dotted_sp_01 sp" src="img/dotted_sp_01.svg" alt="">
                                 <p class="sp">がんリスクを示唆</p>
-                                <img class="sp" src="img/dotted_sp_02.svg" alt="">
+                                <img class="dotted_sp_02 sp" src="img/dotted_sp_02.svg" alt="">
                                 <!-- <svg viewBox="0 0 405 10">
                                     <line x1="10" y1="-10" x2="405" y2="-10"/>
                                 </svg> -->
@@ -62,11 +62,15 @@
                     </div>
                     <div class="kv_middle">
                         <div class="kv_middle_item">
-                            <span class="small_text">写真を撮って</span><br class="pc">専用アプリ<span class="small_text">で送るだけ！</span>
+                            <p><span class="small_text">写真を撮って</span><br class="pc">専用アプリ<span class="small_text">で送るだけ！</span></p>
                             <div class="smartphone_img"><img src="img/smartphone_01.svg" alt="スマートフォンの画像"></div>
                         </div>
-                        <div class="kv_middle_item"><span class="small_text">他社では類を見ない</span><br class="pc">最大限のアフターケア</div>
-                        <div class="kv_middle_item">不特定<span class="small_text">な</span>がん疾患<span class="small_text">の<br class="pc">リスクに対応しています！</span></div>
+                        <div class="kv_middle_item">
+                            <p><span class="small_text">他社では類を見ない</span><br class="pc">最大限のアフターケア</p>
+                        </div>
+                        <div class="kv_middle_item">
+                            <p>不特定<span class="small_text">な</span>がん疾患<span class="small_text">の<br class="pc">リスクに対応しています！</span></p>
+                        </div>
                     </div>
                     <div class="kv_bottom">
                         <p class="kv_overview">
@@ -117,11 +121,11 @@
                             <div class="reason_desc">
                                 <p class="reason_text">
                                     がん細胞の特徴の一つである細胞の異常増殖に伴い、<br class="pc">
-                                    ジアセチルスペルミン（DiASpm）の<br class="pc">
-                                    尿中排泄量が増加することが発見されました。<br class="pc">
+                                    ジアセチルスペルミン（DiASpm）の<br>
+                                    尿中排泄量が増加することが発見されました。<br>
                                     P-stageは、尿の採取により<br>
                                     ジアセチルスペルミンの排泄量を測定する<br class="sp">ことで、<br class="pc">
-                                    一般的な測定では発見が難しいと<br class="sp">
+                                    一般的な測定では発見が難しいと<br>
                                     されているステージ0〜2のがんが発生している<br>
                                     リスクを超早期段階で発見することができます。
                                 </p>
@@ -165,8 +169,8 @@
                         </h3>
                         <div class="merit_item">
                             <p class="merit_text">
-                                生涯で、日本人の2人に1人ががんと診断されると言われていますが、<br>
-                                発見されたがんのステージ（ステージ0~4）によって生存率は大幅に変わります。
+                                生涯で、日本人の2人に1人ががんと<br class="sp">診断されると言われていますが、<br>
+                                発見されたがんのステージ（ステージ0~4）に<br class="sp">よって生存率は大幅に変わります。
                             </p>
                         </div>
                         <div class="graph_wrapper">
@@ -362,6 +366,11 @@
                 </div>
             </section>
             <section id="price">
+                <div class="price_bg pc">
+                    <img class="price_bg_01" src="img/price_bg_01.svg" alt="装飾">
+                    <img class="price_bg_02" src="img/price_bg_02.svg" alt="装飾">
+                    <img class="price_bg_03" src="img/price_bg_03.svg" alt="装飾">
+                </div>
                 <div class="price_head_wrapper">
                     <h2 class="price_headline">料金表</h2>
                     <picture>
@@ -372,12 +381,20 @@
                 <div class="price_grid content_grid">
                     <div class="price_content">
                         <div class="price_upper">
+                            <picture>
+                                <source srcset="img/price_img_01_sp.svg" media="(max-width: 767px)"/>
+                                <img src="img/price_img_01.svg" alt="一般的な全身総合がん検診の平均価格の画像">
+                            </picture>
+                            <img  class="price_upper_arraow" src="img/arraw_03.svg" alt="矢印">
+                        </div>
+                        <!-- <div class="price_upper">
                             <p class="price_upper_title">一般的な全身総合がん検診の平均価格</p>
                             <div class="price_upper_content"><p>男性　<span class="yallow_underline">約225,000円</span></p><p>女性　<span class="yallow_underline">約241,000円</span></p></div>
-                        </div>
+                        </div> -->
                         <div class="course_wrapper">
-                            <div class="course">
+                            <div class="single_course course">
                                 <div class="course_title"><h3>1回測定コース</h3></div>
+                                <div class="white_border"></div>
                                 <div class="course_content">
                                     <p class="sub">送料無料！</p>
                                     <p class="main">￥13,200（税込）</p>
@@ -388,22 +405,68 @@
                                     </div>
                                 </div> 
                             </div>
-                            <p class="course_decoration_text">Pstageが定期的に届く！<br>さらにおトクで安心な定期コースをご用意しております。</p>
-                            <div class="course">
+                            <p class="course_decoration_text">Pstageが定期的に届く！<br>さらにおトクで安心な<br class="sp">定期コースをご用意しております。</p>
+                            <div class="subsc_course course">
                                 <div class="course_title">
                                     <p>6ヶ月に一回の</p>
                                     <h3>定期測定コース</h3>
                                 </div>
+                                <div class="yallow_border"></div>
                                 <div class="course_content">
                                     <p class="sub">送料無料！</p>
-                                    <p class="main">￥12,000（税込）</p>
+                                    <p class="main yallow">￥12,000（税込）</p>
                                     <div class="black_btn_wrapper">
                                         <a href="#" class="btn black_btn">
                                             すぐに申し込む<img src="img/arrow.svg" alt="arrow">
                                         </a>
                                     </div>
+                                    <div class="course_middle">
+                                        <img src="img/course_deco_02.svg" alt="定期測定コース限定特典">
+                                        <p>判定結果によってメーカーから<br>
+                                            医療機関での検査を<br class="sp">推奨させていただいた場合、<br>
+                                            検査費用の<span class="red_text"><span class="large_text">最大10万円</span>分</span>を<br class="sp">お支払いします。</p>
+                                    </div>
+                                    <div class="course_bottom">
+                                        <p class="course_bottom_title">こんな人におすすめ！</p>
+                                        <div class="course_bottom_content">
+                                            <ol>
+                                                <li>・定期的に測定したいけど、忘れてしまいそう...</li>
+                                                <li>・忙しくて毎回の注文が面倒...</li>
+                                                <li>・定期的に測定したいから、もっと費用を抑えたい</li>
+                                            </ol>
+                                        </div>
+                                    </div>
                                 </div> 
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="video">
+                <div class="video_bg">
+                    <picture>
+                        <source srcset="img/video_bg_sp.svg" media="(max-width: 767px)"/>
+                        <img src="img/video_bg.svg" alt="">
+                    </picture>
+                </div>
+                <div class="video_headline_wrapper">
+                    <h2 class="video_headline">測定の流れ</h2>
+                    <picture>
+                        <source srcset="img/price_underline_sp.svg" media="(max-width: 767px)"/>
+                        <img src="img/price_underline.svg" alt="装飾">
+                    </picture>
+                </div>
+                <div class="video_wrapper">
+                    <video controls src="img/Pstage_manual_movie_230630.mp4"></video>
+                    <div class="video_middle">
+                        <p>だから続けられる。<br>
+                            測定がカンタン、お手頃価格</p>
+                    </div>
+                    <div class="cta_warpper">
+                        <div class="CTA">
+                            <a href="#" class="btn cta_btn">
+                                すぐに申し込む<img src="img/arrow.svg" alt="arrow">
+                            </a>
                         </div>
                     </div>
                 </div>
