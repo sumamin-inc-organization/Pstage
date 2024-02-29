@@ -1,7 +1,9 @@
 :root {
     --black: #333333;
     --white: #FFFFFF;
+    --red: #E61400;
     --orange: #FF8E66;
+    --light-orange: #FFDDD1;
     --green: #82C195;
     --yallow: #FBCD00;
     --light-yallow: #FFF766;
@@ -18,7 +20,6 @@ html,body {
 
 main {
     display: block;
-    overflow-x: hidden;
     width: 100%;
 }
 
@@ -77,12 +78,10 @@ header {
 .btn,
 a.btn,
 button.btn {
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     position: relative;
     display: inline-block;
-    padding: 1rem 4rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -94,7 +93,6 @@ button.btn {
     vertical-align: middle;
     text-decoration: none;
     letter-spacing: 0.1em;
-    color: #212529;
     border-radius: 0.5rem;
 }
 
@@ -259,7 +257,7 @@ a.cta_btn:hover {
 /*レイアウトの設定*/
 .content_grid {
     display: grid;
-    grid-template-columns: 1fr 70vw 1fr;
+    grid-template-columns: 1fr min(70vw, 960px) 1fr;
 }
 
 @media (max-width: 1024px) {

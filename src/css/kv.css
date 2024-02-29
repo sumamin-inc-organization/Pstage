@@ -726,7 +726,8 @@
 
 @media (min-width: 1500px) {
     .kv_upper {
-        /* justify-content: center; */
+        width: 960px;
+        justify-content: space-between;
     }
     
     .kv_upper_right {
@@ -738,15 +739,12 @@
     .kv_middle {
         justify-content: space-between;
         gap: unset;
-        width: 100%;
+        width: 960px;
     }
 
-    .kv_middle_item {
-        width: 20vw;
-    }
 
     .kv_bottom {
-        width: 100%;
+        width: 960px;
     }
 
     .kv_bottom_content {
