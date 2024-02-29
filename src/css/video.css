@@ -85,10 +85,11 @@
     
     .video_wrapper video {
         border-radius: 15px;
+        width: 350px;
     }
     
     .video_headline {
-        margin-top: 122px;
+        margin-top: 74px;
     }
     
     .video_middle {
