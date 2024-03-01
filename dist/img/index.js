@@ -8,6 +8,7 @@ import "./css/price.css"
 import "./css/video.css"
 import "./css/voice.css"
 import "./css/faq.css";
+import "./css/company.css";
 
 
 $(function() {
@@ -15,5 +16,11 @@ $(function() {
     $('.faq_item').click(function() {
         $(this).find('.faq_mark').toggleClass('open');
         $(this).find('.faq_answer').slideToggle();
+    });
+
+    $('.top_back_btn').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 300);
     });
 });
