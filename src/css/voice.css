@@ -103,9 +103,9 @@
 }
 
 @media (max-width: 767px) {
-    .voice_grid {
+    /* .voice_grid {
         grid-template-columns: none;
-    }
+    } */
 
     .voice_content {
         grid-column: 2 / 3;

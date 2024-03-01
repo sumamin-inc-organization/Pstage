@@ -74,9 +74,9 @@
     position: relative;
     white-space: nowrap;
     margin-left: 7px;
-    font-size: 18px;
+    font-size: min(1.31vw, 18px);
     letter-spacing: 0.04rem;
-    line-height: 25px;
+    line-height: min(1.83vw, 25px);
     font-weight: bold;
 }
 
@@ -91,15 +91,15 @@
 }
 
 .feature_head .speech::after {
-    top: -8px;
-    right: 170px;
+    top: min(0.58vw, -8px);
+    right: min(12.4vw, 170px);
     -webkit-transform: rotate(150deg);
     transform: rotate(150deg);
 }
 
 .feature_head .speech::before {
-    top: 56px;
-    right: 170px;
+    top: min(4.09vw, 56px);
+    right: min(12.4vw, 170px);
     -webkit-transform: rotate(-150deg);
     transform: rotate(-150deg);
 }
@@ -108,8 +108,8 @@
     display: inline-flex;
     flex-direction: row;
     align-items: baseline;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: min(3.22vw, 44px);
+    line-height: min(4.39vw, 60px);
     font-weight: bold;
     /* margin-top: 88px; */
     white-space: nowrap;
@@ -132,14 +132,6 @@
     letter-spacing: 0.04rem;
     line-height: 25px;
     margin-left: 7px;
-}
-
-.feature_h3 .speech::before {
-
-}
-
-.feature_h3 .speech::after {
-    
 }
 
 .graph_wrapper {
@@ -167,18 +159,17 @@
 }
 
 .reason_item .reason_desc .reason_text {
-    font-size: 18px;
+    font-size: min(1.31vw,18px);
     letter-spacing: 0.04rem;
-    line-height: 40px;
+    line-height: min(2.92vw, 40px);
     font-weight: bold;
-    white-space: nowrap;
 }
 
 .reason_item .reason_desc .reason_note {
     color: var(--green);
-    font-size: 14px;
+    font-size: min(10.2vw, 14px);
     letter-spacing: 0.04rem;
-    line-height: 24px;
+    line-height: min(1.75vw, 24px);
     font-weight: bold;
     margin-top: 25px;
     display: inline-block;
@@ -265,9 +256,9 @@
 }
 
 .merit_text {
-    font-size: 18px;
+    font-size: min(1.31vw, 18px);
     font-weight: bold;
-    line-height: 40px;
+    line-height: min(2.92vw, 40px);
     letter-spacing: 0.04rem;
     margin-top: 30px;
 }
@@ -312,9 +303,9 @@
 .limit_text {
     display: inline-block;
     margin-top: 36px;
-    font-size: 18px;
+    font-size: min(1.31vw, 18px);
     letter-spacing: 0.04rem;
-    line-height: 40px;
+    line-height: min(2.92vw, 40px);
     font-weight: bold;
 }
 
@@ -342,10 +333,11 @@
         grid-template-columns: 1fr 78vw 1fr;
     }
 
-    .feature_h3 {
+
+    /* .feature_h3 {
         font-size: 34px;
         line-height: 48px;
-    }
+    } */
 
     .feature_h3 .numbering {
         font-size: 16px;
@@ -356,11 +348,11 @@
         gap: 20px;
     }
 
-    .reason_item .reason_desc .reason_text {
+    /* .reason_item .reason_desc .reason_text {
         font-size: 14px;
         line-height: 30px;
         letter-spacing: 0.02rem;
-    }
+    } */
 
     .reason_item .reason_desc .reason_note {
         font-size: 10px;
@@ -373,14 +365,14 @@
         right: 42px;
     }    
 
-    .merit_text {
+    /* .merit_text {
         font-size: 14px;
         line-height: 30px;
         letter-spacing: 0.02rem;
-    }
+    } */
 
     .merit_caption {
-        font-size: 12px;
+        font-size: min(0.87vw, 12px);
         margin-top: 14px;
     }
 
@@ -390,11 +382,11 @@
         line-height: 40px;
     }
 
-    .limit_text {
+    /* .limit_text {
         font-size: 14px;
         line-height: 30px;
         letter-spacing: 0.02rem;
-    }
+    } */
 }
 
 /* sp */
@@ -434,7 +426,6 @@
     }
 
     .feature_h3 {
-        /* margin-top: 51px; */
         font-size: 30px;
         flex-direction: column;
         align-items: flex-start;
@@ -466,7 +457,7 @@
 
     .feature_head .speech {
         position: absolute;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 22px;
         left: 210px;
         bottom: 3px;
@@ -476,6 +467,14 @@
         left: 0;
     }
 
+    .feature_head .speech::before {
+        top: 50px;
+    }
+
+    .feature_head .speech::after {
+        top: -4px;
+    }
+
     .reason_item {
         flex-direction: column;
         gap: 33px;
@@ -483,6 +482,7 @@
 
     .reason_item img {
         width: 100%;
+        height: fit-content;
     }
 
     .reason_item .reason_desc .reason_text {

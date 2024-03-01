@@ -84,6 +84,9 @@
     .video_wrapper video {
         border-radius: 15px;
         width: 350px;
+        background-image: url(../images/video_thumbnail.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
     .video_headline {

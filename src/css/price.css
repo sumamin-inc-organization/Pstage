@@ -226,7 +226,6 @@
 .course_content .sub {
     font-size: min(2.2vw, 30px);
     letter-spacing: 0.04rem;
-    font-weight: normal;
     text-align: center;
     color: var(--red);
     margin-bottom: min(-1.8vw, -24px);
@@ -288,11 +287,41 @@
 }
 
 .course_decoration_text {
+    position: relative;
     text-align: center;
     margin-top: min(7.83vw, 107px);
     font-size: min(1.46vw, 20px);
     margin-bottom: 16px;
 }
+
+.course_decoration_text::before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 2px;
+    left: -20px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.course_decoration_text::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 2px;
+    right: -20px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
 
 .subsc_course {
     position: relative;
@@ -406,6 +435,14 @@
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 16px;
+    }
+
+    .course_decoration_text::before {
+        left: -30px;
+    }
+    
+    .course_decoration_text::after {
+        right: -30px;
     }
 
     .course {

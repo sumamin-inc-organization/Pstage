@@ -533,6 +533,7 @@
 
     .kv_upper {
         flex-direction: column;
+        width: 100%;
     }
 
     .kv_upper_left {
