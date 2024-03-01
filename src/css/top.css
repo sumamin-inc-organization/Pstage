@@ -186,6 +186,29 @@ a.cta_btn:hover {
     -ms-transform: translate(-50%, 0%);
 }
 
+.head_underline {
+    width: 330px;
+    margin: auto;
+    height: 8px;
+    margin-top: 12px;
+}
+
+.head_underline .line {
+    display: inline-block;
+    height: 8px;
+    width: 92%;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.head_underline .dot {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
 @media (max-width: 1024px) {
     .headline p {
         font-size: 24px;
@@ -252,6 +275,32 @@ a.cta_btn:hover {
         width: 100%;
         height: 2px;
         border-radius: 2px;
+    }
+
+    .head_underline {
+        width: 157px;
+        margin: auto;
+        height: 3.5px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+    
+    .head_underline .line {
+        display: inline-block;
+        height: 3.5px;
+        width: 90%;
+        background-color: var(--white);
+        border-radius: 3.5px;
+    }
+    
+    .head_underline .dot {
+        display: inline-block;
+        height: 3.5px;
+        width: 3.5px;
+        background-color: var(--white);
+        border-radius: 3.5px;
     }
 }
 

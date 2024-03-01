@@ -28,6 +28,14 @@
     line-height: 60px;
 }
 
+.faq_underline {
+    width: 445px;
+}
+
+.faq_underline .line,  .faq_underline .dot {
+    background-color: var(--green);
+}
+
 .faq_flex {
     padding-top: 50px;
     padding-bottom: 48px;
@@ -176,6 +184,10 @@ a.faq_btn:hover {
     .faq_headline {
         font-size: 28px;
         line-height: 28px;
+    }
+
+    .faq_underline {
+        width: 196px;
     }
     
     .faq_flex {

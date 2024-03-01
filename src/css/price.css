@@ -265,6 +265,7 @@
     display: flex;
     justify-content: center;
     margin-top: min(1.75vw, 24px);
+    cursor: pointer;
 }
 
 .black_btn {
@@ -399,10 +400,14 @@
 
 .course_bottom_title {
     color: var(--red);
+    margin-bottom: 8px;
 }
 
 .course_bottom_content {
     position: relative;
+}
+.course_bottom_content li:not(:first-child) {
+    margin-top: 10px;
 }
 
 .course_bottom_content::before {
@@ -501,7 +506,9 @@
 
     .course_middle {
         width: 320px;
-        margin-top: 31px;
+        margin-top: 34px;
+        padding-top: 30px;
+        padding-bottom: 24px;
     }
 
     .course_middle p {
@@ -531,6 +538,14 @@
         height: 74px;
         top: 10px;
         left: -16px;
+    }
+
+    .course_bottom_title {
+        color: var(--red);
+        margin-bottom: 2px;
+    }
+    .course_bottom_content li:not(:first-child) {
+        margin-top: 2px;
     }
 
     .subsc_course {
