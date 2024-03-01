@@ -1,10 +1,7 @@
 #video {
-    /* background-image: url(../images/video_bg.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 120%; */
+    background-color: var(--light-green);
     margin-top: 211px;
+    padding-bottom: 167px;
     font-weight: bold;
 }
 
@@ -68,6 +65,7 @@
 @media (max-width: 767px) {
     #video {
         margin-top: 115px;
+        padding-bottom: 51px;
     }
     
     .video_headline {
