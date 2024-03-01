@@ -676,6 +676,18 @@
         font-size: 14px;
     }
 
+    .kv_middle_item .only_sp_item {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .kv_middle_item .newline {
+        line-height: 18px;
+        text-align: left;
+    }
+
     .smartphone_img {
         top: -36px;
         right: -26px;
