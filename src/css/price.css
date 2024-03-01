@@ -496,6 +496,10 @@
         left: -16px;
     }
 
+    .subsc_course {
+        padding-bottom: 35px;
+    }
+
     .subsc_course::after {
         width: 83px;
         height: 83px;

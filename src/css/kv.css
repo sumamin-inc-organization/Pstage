@@ -443,7 +443,8 @@
     }
     
     .kv_upper {
-        justify-content: center;
+        justify-content: space-between;
+        width: min(70vw, 960px);
     }
 }
 
@@ -745,7 +746,6 @@
     .kv_upper_right {
         margin-right: 0;
         margin-left: 160px;
-        margin-left: 14vw;
     }
 
     .kv_middle {

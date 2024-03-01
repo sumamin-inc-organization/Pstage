@@ -12,7 +12,6 @@
 .voice_wrapper {
     position: relative;
     z-index: 10;
-    overflow-y: hidden;
 }
 
 .voice_wrapper::before {
@@ -117,6 +116,7 @@
     .voice_wrapper {
         position: relative;
         z-index: 10;
+        overflow-y: hidden;
     }
     
     .voice_wrapper::before {
