@@ -510,7 +510,7 @@
 
     .kv_back {
         overflow-x: hidden;
-        height: 160vh;
+        height: 190vh;
     }
 
     .kv_back--main {
@@ -663,7 +663,7 @@
 
     .kv_middle_item {
         width: 100%;
-        font-size: 20px;
+        font-size: min(5.12vw, 20px);
         padding: 23px 0 22px 0;
         height: 65px;
     }
@@ -673,7 +673,7 @@
     }
 
     .kv_middle_item .small_text {
-        font-size: 14px;
+        font-size: min(3.59vw, 14px);
     }
 
     .kv_middle_item .only_sp_item {
