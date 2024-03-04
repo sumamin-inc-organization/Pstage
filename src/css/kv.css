@@ -607,14 +607,6 @@
         letter-spacing: 0.03rem;
         margin-top: 10px;
     }
-/* 
-    .kv_text02 p {
-        padding-bottom: 7px;
-        background-image: radial-gradient(circle at calc(100% - 2px) calc(100% - 2px), var(--orange) 2px, transparent 2px);
-        background-repeat: repeat-x;
-        background-position: left bottom;
-        background-size: 16px 6px;
-    } */
 
     .kv_text02::after {
         content: "";
@@ -627,22 +619,37 @@
         right: 20px;
     }
 
-    /* .sp_line01 {
-        background-image: url(../images/dotted_sp_01.svg);
-        background-size: contain;
-        background-repeat: repeat-x;
-        background-position: left bottom;
-        width: 88px;
-        padding-bottom: 4px;
+    .sp_line01, .sp_line02 {
+        position: relative;
     }
 
     .sp_line02 {
-        background-image: url(../images/dotted_sp_02.svg);
-        background-size: contain;
-        background-repeat: repeat-x;
-        background-position: left bottom;
-        padding-bottom: 4px;
-    } */
+        margin-top: 4px;
+    }
+
+    .sp_line01::after {
+        position: absolute;
+        background: radial-gradient(circle farthest-side, var(--orange), var(--orange) 40%, transparent 56%, transparent);
+        background-size: 8px;
+        left: 0;
+        bottom: -6px;
+        content: '';
+        display: inline-block;
+        height: 8px;
+        width: 67%;
+    }
+
+    .sp_line02::after {
+        position: absolute;
+        background: radial-gradient(circle farthest-side, var(--orange), var(--orange) 40%, transparent 56%, transparent);
+        background-size: 8px;
+        left: 0;
+        bottom: -6px;
+        content: '';
+        display: inline-block;
+        height: 8px;
+        width: 104%;
+    }
     
     .kv_text03 {
         font-size: 28px;

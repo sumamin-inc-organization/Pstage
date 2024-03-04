@@ -33,6 +33,28 @@ $(function() {
 
 /*  出現アニメーション */
 document.addEventListener("DOMContentLoaded", function() {
+    /* kvセクション */
+    let kvText01 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".kv_text01",
+            start: "-=100px",
+            scrub: false,
+        },
+    });
+    kvText01
+    .from(".kv_text01", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
+
+    /* flowセクション */
+    let flow_upper_title = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".flow_upper_title",
+            start: "-=300px",
+            scrub: false,
+        },
+    });
+    flow_upper_title
+    .from(".flow_upper_title", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
+
     let  flowSupport = gsap.timeline({
         scrollTrigger: {
             trigger: ".flow_support",
@@ -45,8 +67,18 @@ document.addEventListener("DOMContentLoaded", function() {
     .from(".kirakira_01", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"})
     .from(".kirakira_02", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "-=0.4");
 
+    /* priceセクション */
+    let price_upper_arraow = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".price_upper_arraow",
+            start: "-=500px",
+            scrub: false,
+        },
+    });
+    price_upper_arraow
+    .from(".price_upper_arraow", { y: -10, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
+
     let hukidashi = CSSRulePlugin.getRule(".subsc_course::after");
-    console.log(hukidashi);
 
     let  subscCourse = gsap.timeline({
         scrollTrigger: {
@@ -73,13 +105,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-$(document).ready(function() {
-    // var agent = navigator.userAgent;
-    // console.log(agent);
-    // if (navigator.userAgent.indexOf("iPhone") > 0) {
-    //     let dottedSp01 = $('.dotted_sp_01');
-    //     let dottedSp02 = $('.dotted_sp_02');
-    //     $(dottedSp01).css({'margin-left': '0px', 'width': '100px'});
-    //     $(dottedSp02).css({'margin-left': '-4px', 'width' : '140px'});
-    // }
-});
+// $(document).ready(function() {
+//     if (navigator.userAgent.indexOf("iPhone") > 0) {
+//         let dottedSp01 = $('.dotted_sp_01');
+//         let dottedSp02 = $('.dotted_sp_02');
+//         $(dottedSp01).css({'margin-left': '-2px', 'width': '100px', 'height' : '3.92px'});
+//         $(dottedSp02).css({'margin-left': '-4px', 'width' : '139.29px', 'height' : '3.67px'});
+//     }
+// });
