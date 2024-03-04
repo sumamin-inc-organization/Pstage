@@ -10,6 +10,12 @@ import "./css/voice.css"
 import "./css/faq.css";
 import "./css/company.css";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+gsap.registerPlugin(CSSRulePlugin);
+
 
 $(function() {
     //よくある質問クリックイベント
@@ -23,4 +29,33 @@ $(function() {
             scrollTop: 0
         }, 300);
     });
+});
+
+/*  出現アニメーション */
+document.addEventListener("DOMContentLoaded", function() {
+    let  flowSupport = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".flow_support",
+            start: "-=100px",
+            scrub: false,
+        },
+    });
+
+    flowSupport
+    .from(".kirakira_01", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"})
+    .from(".kirakira_02", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "-=0.4");
+
+    let hukidashi = CSSRulePlugin.getRule(".subsc_course::after");
+    console.log(hukidashi);
+
+    let  subscCourse = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".subsc_course",
+            start: "-=160px",
+            scrub: false,
+        },
+    });
+
+    subscCourse
+    .to(hukidashi, { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"})
 });
