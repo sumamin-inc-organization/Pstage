@@ -97,6 +97,8 @@
 }
 
 .top_back_btn {
+    font-size: 20px;
+    letter-spacing: 0.06rem;
     color: var(--green);
     position: relative;
     cursor: pointer;

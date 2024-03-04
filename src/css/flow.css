@@ -125,7 +125,27 @@
     line-height: 71px;
 }
 
-.supprt_upper p::before {
+.kirakira_text {
+    position: relative;
+}
+
+.kirakira_text .kirakira_01 {
+    position: absolute;
+    width: 52px;
+    height: 51px;
+    top: -20px;
+    left: -55px;
+}
+
+.kirakira_text .kirakira_02 {
+    position: absolute;
+    width: 33px;
+    height: 42px;
+    bottom: -5px;
+    right: -40px;
+}
+
+/* .supprt_upper p::before {
     position: absolute;
     content: "";
     background-image: url(../images/kirakira_01.svg);
@@ -147,7 +167,7 @@
     height: 42px;
     bottom: -5px;
     right: -40px;
-}
+} */
 
 .supprt_upper h3 {
     margin-top: 24px;
@@ -391,8 +411,22 @@
         letter-spacing: 0.12rem;
         line-height: 44px;
     }
+
+    .kirakira_text .kirakira_01 {
+        width: 32px;
+        height: 32px;
+        top: -10px;
+        left: -34px;
+    }
+
+    .kirakira_text .kirakira_02 {
+        width: 21px;
+        height: 26px;
+        bottom: -3px;
+        right: -24px;
+    }
     
-    .supprt_upper p::before {
+    /* .supprt_upper p::before {
         width: 32px;
         height: 32px;
         top: -10px;
@@ -405,7 +439,7 @@
         bottom: -3px;
         right: -24px;
     }
-    
+     */
     .supprt_upper h3 {
         margin-top: 18px;
         font-size: 36px;

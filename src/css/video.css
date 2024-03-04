@@ -1,7 +1,6 @@
 #video {
-    background-color: var(--light-green);
+    /* background-color: var(--light-green); */
     margin-top: 211px;
-    padding-bottom: 167px;
     font-weight: bold;
 }
 
@@ -36,6 +35,8 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    padding-bottom: 167px;
+    background-color: var(--light-green);
 }
 
 .video_wrapper video {
@@ -65,7 +66,6 @@
 @media (max-width: 767px) {
     #video {
         margin-top: 115px;
-        padding-bottom: 51px;
     }
     
     .video_headline {
@@ -79,6 +79,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 47px;
+        padding-bottom: 51px;
     }
     
     .video_wrapper video {

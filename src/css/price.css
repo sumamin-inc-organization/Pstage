@@ -266,6 +266,7 @@
     justify-content: center;
     margin-top: min(1.75vw, 24px);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .black_btn {
@@ -275,6 +276,27 @@
     letter-spacing: 0.06rem;
     padding: min(1.75vw, 24px) 0;
 }
+
+/* .black_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform: skewX(-25deg);
+} */
+
+.black_btn_wrapper:hover {
+    background-color: #585858;
+}
+
+/* @keyframes shine {
+    100% {
+        left: 125%;
+    }
+} */
 
 .black_btn img {
     width: min(1.3vw, 18px);
@@ -344,6 +366,8 @@
     height: min(16.2vw, 222px);
     top: min(-1.75vw, -24px);
     left: min(-4.9vw, -67px);
+    scale: 0;
+    opacity: 0;
 }
 
 .course_middle {

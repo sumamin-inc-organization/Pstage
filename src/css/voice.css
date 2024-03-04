@@ -178,6 +178,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 130px;
+    }
+
+    .voice_img img {
+        width: 100%;
     }
     
     .voice_text {
