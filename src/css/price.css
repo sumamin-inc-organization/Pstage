@@ -70,11 +70,18 @@
     align-items: center;
     margin-top: 24px;
     color: var(--white);
-    /* background-image: url(../images/course_01_bg.svg);
-    background-position: top center;
-    background-repeat:no-repeat;
-    background-size: cover; */
 }
+
+/* .price_upper picture {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    width: 100%;
+    z-index: -1;
+} */
 
 .price_upper_arraow {
     width: 5.85vw;
@@ -88,7 +95,7 @@
 
 .price_upper_title {
     position: relative;
-    padding-top: min(0.73vw, 10px);
+    padding-top: 10px;
     text-align: center;
     font-size: min(32px, 2.4vw);
     line-height: min(3.95vw, 54px);
@@ -114,7 +121,7 @@
     justify-content: center;
     gap: 72px;
     padding-top: min(2.34vw, 32px);
-    padding-bottom: min(2.56vw, 35px);
+    padding-bottom: 35px;
 }
 
 .price_upper_content p {
@@ -134,9 +141,9 @@
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
-    bottom: -7px;
+    bottom: min(-0.512vw, -7px);
     width: 108%;
-    height: 8px;
+    height: min(0.585vw, 8px);
     border-radius: 8px;
     background: #FBD83B;
 }
@@ -228,7 +235,7 @@
     letter-spacing: 0.04rem;
     text-align: center;
     color: var(--red);
-    margin-bottom: min(-1.8vw, -24px);
+    margin-bottom: -20px;
 }
 
 .course_content .main {
@@ -277,26 +284,9 @@
     padding: min(1.75vw, 24px) 0;
 }
 
-/* .black_btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-    transform: skewX(-25deg);
-} */
-
 .black_btn_wrapper:hover {
     background-color: #585858;
 }
-
-/* @keyframes shine {
-    100% {
-        left: 125%;
-    }
-} */
 
 .black_btn img {
     width: min(1.3vw, 18px);
@@ -451,6 +441,33 @@
         line-height: 10px;
     }
 
+    .price_upper_title {
+        font-size: 3.58vw;
+        line-height: 24px;
+    }
+
+    .price_upper_title::before {
+        height: 1px;
+        bottom: -1.28vw;
+        width: 64.6vw;
+    }
+
+    .price_upper_content {
+        gap: 5.12vw;
+        margin-top: 3.07vw;
+        margin-bottom: 3.58vw;
+    }
+
+    .price_upper_content p {
+        font-size: 4.35vw;
+        line-height: 24px;
+    }
+
+    .yallow_underline::before {
+        bottom: -2px;
+        width: 102%;
+    }
+
     .price_upper_arraow {
         width: 47px;
         bottom: -50px;
@@ -545,8 +562,8 @@
     }
 
     .course_middle p .red_text::before {
-        height: 2.5px;
-        bottom: -3px;
+        height: 3px;
+        bottom: 0px;
     }
 
     .course_bottom {

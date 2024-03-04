@@ -530,7 +530,6 @@
     }
     
     .step_item .text p .bg_orange {
-        background-color: var(--orange);
         color: var(--white);
     }
     

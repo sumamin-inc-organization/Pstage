@@ -44,6 +44,17 @@ document.addEventListener("DOMContentLoaded", function() {
     kvText01
     .from(".kv_text01", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
 
+    /* featureセクション */
+    let speech = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".feature_head .speech",
+            start: "-=260px",
+            scrub: false,
+        },
+    });
+    speech
+    .from(".feature_head .speech", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
+
     /* flowセクション */
     let flow_upper_title = gsap.timeline({
         scrollTrigger: {
@@ -87,29 +98,28 @@ document.addEventListener("DOMContentLoaded", function() {
             scrub: false,
         },
     });
-
     subscCourse
-    .to(hukidashi, { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"})
+    .to(hukidashi, { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"});
+
+    let  course_decoration_text = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".course_decoration_text",
+            start: "-=280px",
+            scrub: false,
+        },
+    });
+    course_decoration_text
+    .from(".course_decoration_text", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"})
 
     gsap.to(".bg_orange", {
         scrollTrigger: {
-            trigger: ".bg_orange", // アニメーションが始まるトリガーとなる要素
-            start: "top center", // アニメーションが始まる位置
+            trigger: ".bg_orange",
+            start: "-=200px",
             toggleClass: {
-            targets: ".bg_orange", // クラスを切り替える対象の要素
-            className: "active", // クラス名 "active" を付け外し
+            targets: ".bg_orange",
+            className: "active",
             },
             once: true,
         },
     });
 });
-
-
-// $(document).ready(function() {
-//     if (navigator.userAgent.indexOf("iPhone") > 0) {
-//         let dottedSp01 = $('.dotted_sp_01');
-//         let dottedSp02 = $('.dotted_sp_02');
-//         $(dottedSp01).css({'margin-left': '-2px', 'width': '100px', 'height' : '3.92px'});
-//         $(dottedSp02).css({'margin-left': '-4px', 'width' : '139.29px', 'height' : '3.67px'});
-//     }
-// });

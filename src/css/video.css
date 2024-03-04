@@ -1,6 +1,5 @@
 #video {
-    /* background-color: var(--light-green); */
-    margin-top: 211px;
+    margin-top: 96px;
     font-weight: bold;
 }
 
@@ -65,7 +64,7 @@
 
 @media (max-width: 767px) {
     #video {
-        margin-top: 115px;
+        margin-top: 60px;
     }
     
     .video_headline {
