@@ -225,6 +225,7 @@
     bottom: -34px;
     content: '';
     background: radial-gradient(var(--orange) 20%, transparent 30%) center/ 1em;
+    background-repeat: repeat-x;
     transform: rotate(90deg);
     flex: auto;
 }
@@ -244,12 +245,20 @@
     margin-top: 27px;
     font-size: 30px;
     letter-spacing: 0.04rem;
-    line-height: 48px;
+    line-height: 50px;
 }
 
 .step_item .text p .bg_orange {
-    background-color: var(--orange);
+    background-image: linear-gradient(90deg, var(--orange), var(--orange));
+    background-repeat: no-repeat;
     color: var(--white);
+    padding-bottom: 2px;
+    background-size: 0 100%;
+    transition: background-size 1.5s;
+}
+
+.step_item .text p .bg_orange.active {
+    background-size: 100% 100%;
 }
 
 .supprt_bottom {
@@ -517,7 +526,7 @@
         margin-top: 18px;
         font-size: 16px;
         letter-spacing: 0.04rem;
-        line-height: 27px;
+        line-height: 29px;
     }
     
     .step_item .text p .bg_orange {

@@ -46,13 +46,13 @@
 }
 
 .dotted_sp_01 {
-    width: 88px;
-    height: 3.67px;
+    /* width: 88px;
+    height: 3.67px; */
 }
 
 .dotted_sp_02 {
-    width: 139px;
-    height: 3.67px;
+    /* width: 139px;
+    height: 3.67px; */
 }
 
 .kv_wrapper {
@@ -70,18 +70,24 @@
     width: 100%;
 }
 
+.kv_upper_left {
+    margin-left: min(1.46vw, 20px);
+}
+
 .kv_upper_right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     margin-bottom: -58px;
-    margin-left: 6.2vw;
+    margin-left: 6.9vw;
 }
 
 .kv_application {
     position: relative;
     background-image: url(../images/apply_back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 218px;
     height: 218px;
     text-align: center;
@@ -446,9 +452,17 @@
         justify-content: space-between;
         width: min(70vw, 960px);
     }
+
+    .kv_upper_right {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 1024px) {
+    .kv_upper_left {
+        margin-left: 0;
+    }
+
     .kv_text01 {
         font-size: 21px;
     }
@@ -467,6 +481,34 @@
 
     .kv_text03 .small_text {
         font-size: 26px;
+    }
+
+    .kv_upper_right {
+        margin-left: 2.8vw;
+    }
+
+    .kv_application {
+        width: 180px;
+        height: 180px;
+    }
+
+    .kv_application::before {
+        width: 166px;
+        height: 166px;
+    }
+
+    .kv_application::after {
+        width: 100px;
+    }
+
+    .kv_application p {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .kv_application--desc {
+        font-size: 14px;
+        line-height: 22px
     }
 
     .kv_middle_item {
@@ -584,6 +626,23 @@
         top: 4px;
         right: 20px;
     }
+
+    /* .sp_line01 {
+        background-image: url(../images/dotted_sp_01.svg);
+        background-size: contain;
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        width: 88px;
+        padding-bottom: 4px;
+    }
+
+    .sp_line02 {
+        background-image: url(../images/dotted_sp_02.svg);
+        background-size: contain;
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        padding-bottom: 4px;
+    } */
     
     .kv_text03 {
         font-size: 28px;

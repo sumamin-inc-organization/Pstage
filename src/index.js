@@ -58,4 +58,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     subscCourse
     .to(hukidashi, { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"})
+
+    gsap.to(".bg_orange", {
+        scrollTrigger: {
+            trigger: ".bg_orange", // アニメーションが始まるトリガーとなる要素
+            start: "top center", // アニメーションが始まる位置
+            toggleClass: {
+            targets: ".bg_orange", // クラスを切り替える対象の要素
+            className: "active", // クラス名 "active" を付け外し
+            },
+            once: true,
+        },
+    });
+});
+
+
+$(document).ready(function() {
+    // var agent = navigator.userAgent;
+    // console.log(agent);
+    // if (navigator.userAgent.indexOf("iPhone") > 0) {
+    //     let dottedSp01 = $('.dotted_sp_01');
+    //     let dottedSp02 = $('.dotted_sp_02');
+    //     $(dottedSp01).css({'margin-left': '0px', 'width': '100px'});
+    //     $(dottedSp02).css({'margin-left': '-4px', 'width' : '140px'});
+    // }
 });
