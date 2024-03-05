@@ -489,6 +489,10 @@
         font-size: 26px;
     }
 
+    .kv_text02::after {
+        right: -12px;
+    }
+
     .kv_text02 .dotted {
         width: 326px;
     }
