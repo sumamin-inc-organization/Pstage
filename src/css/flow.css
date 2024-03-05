@@ -24,7 +24,7 @@
     font-weight: bold;
     line-height: 40px;
     letter-spacing: 0.04rem;
-    margin-top: 86px;
+    margin-top: 81px;
 }
 
 .flow_upper_title {
@@ -63,7 +63,7 @@
 
 .flow_figure {
     margin-top: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -190,7 +190,7 @@
     background-color: var(--orange);
     width: 60px;
     height: 38px;
-    bottom: -90px;
+    bottom: -104px;
     left: 50%;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);

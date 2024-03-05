@@ -5,7 +5,7 @@
 .company_grid {
     background-color: #FFFDD1;
     position: relative;
-    padding-bottom: 111px;
+    padding-bottom: 26px;
 }
 
 .company_grid::before {
