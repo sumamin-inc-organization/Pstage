@@ -6,6 +6,7 @@ const pages = [
   "index",
   "faq",
   "contact",
+  "application"
 ];
 module.exports = {
   mode: "development",
