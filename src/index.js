@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let  subscCourse = gsap.timeline({
         scrollTrigger: {
             trigger: ".subsc_course",
-            start: "-=160px",
+            start: "-=240px",
             scrub: false,
         },
     });
