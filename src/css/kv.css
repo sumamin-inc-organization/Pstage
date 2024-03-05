@@ -419,15 +419,15 @@
     vertical-align: middle;
 }
 
-.kv_bottom_item:nth-child(1) {
+.kv_bottom_item.green {
     background-color: var(--green);
 }
 
-.kv_bottom_item:nth-child(2) {
+.kv_bottom_item.yallow {
     background-color: var(--yallow);
 }
 
-.kv_bottom_item:nth-child(3) {
+.kv_bottom_item.orange {
     background-color: var(--orange);
 }
 
