@@ -89,6 +89,15 @@
     padding-left: min(5.85vw, 80px);
 }
 
+.company_note_item {
+    display: flex;
+    flex-direction: row;
+}
+
+.company_note_item span {
+    min-width: 32px;
+}
+
 .top_back_wrapper {
     margin: auto;
     display: flex;
@@ -172,10 +181,11 @@
     
     .company_note {
         margin-top: 38px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 27px;
         font-weight: 500;
-        padding-left: min(5.85vw, 80px);
+        padding-left: 0;
+        font-feature-settings: "palt";
     }
 
     .top_back_wrapper {
