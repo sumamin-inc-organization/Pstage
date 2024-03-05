@@ -592,7 +592,7 @@
     }
 
     .kv_wrapper {
-        margin: 83px 5.6vw;
+        margin: 78px 5.6vw;
     }
 
     .kv_upper {
@@ -627,7 +627,7 @@
     .kv_text02 {
         font-size: 17px;
         letter-spacing: 0.03rem;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     .kv_text02::after {
@@ -675,7 +675,7 @@
     
     .kv_text03 {
         font-size: 28px;
-        margin-top: 20px;
+        margin-top: 16px;
         font-feature-settings: normal;
     }
 
