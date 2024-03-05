@@ -116,6 +116,7 @@ a.cta_btn {
     background-position: 100% 50%;
     background-size: 200% auto;
     transition: background-position 0.3s ease-in-out, box-shadow 0.4s ease, margin 0.4s ease;
+    /* animation: ctaBtnAnime 4s ease 2s infinite normal; */
 }
 
 a.cta_btn:hover {
@@ -136,6 +137,20 @@ a.cta_btn:hover {
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
+}
+
+@keyframes ctaBtnAnime {
+    0% {
+        background-position: 100%, 50%;
+    }
+
+    80% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: -100%, -50%;
+    }
 }
 
 /*見出しの設定*/
@@ -213,6 +228,8 @@ a.cta_btn:hover {
     border-radius: 8px;
 }
 
+
+/* footerの設定 */
 footer {
     background-color: #FFFDD1;
     color: var(--white);

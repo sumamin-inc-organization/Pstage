@@ -246,19 +246,26 @@
 
 }
 
-.course_content .main::after {
+.underline_anime_01::after, .underline_anime_02::after {
     position: absolute;
     content: "";
     background-color: var(--orange);
     width: min(46vw, 628px);
     height: min(1.46vw, 20px);
     border-radius: 9999px;
-    left: 50%;
+    left: 0%;
     bottom: min(0.7vw, 10px);
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     z-index: -1;
+    transition: all 0.8s ease;
+    transform: scale(0, 1);
+    transform-origin: left top;
+}
+
+.underline_anime_01.active::after, .underline_anime_02.active::after {
+    transform: scale(1, 1);
 }
 
 .course_content .main.yallow::after {

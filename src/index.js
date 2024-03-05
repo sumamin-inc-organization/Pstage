@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
     /* featureセクション */
     let speech = gsap.timeline({
         scrollTrigger: {
-            trigger: ".feature_head .speech",
-            start: "-=260px",
+            trigger: ".feature_headline",
+            start: "top",
             scrub: false,
         },
     });
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
     /* flowセクション */
     let flow_upper_title = gsap.timeline({
         scrollTrigger: {
-            trigger: ".flow_upper_title",
-            start: "-=300px",
+            trigger: ".flow_headline",
+            start: "top",
             scrub: false,
         },
     });
@@ -114,9 +114,37 @@ document.addEventListener("DOMContentLoaded", function() {
     gsap.to(".bg_orange", {
         scrollTrigger: {
             trigger: ".bg_orange",
-            start: "-=200px",
+            start: "-=400px",
             toggleClass: {
             targets: ".bg_orange",
+            className: "active",
+            },
+            once: true,
+        },
+    });
+
+    let underline01 = CSSRulePlugin.getRule(".underline_anime_01::after");
+
+    gsap.to(underline01, {
+        scrollTrigger: {
+            trigger: ".single_course",
+            start: "-=200px",
+            toggleClass: {
+            targets: ".underline_anime_01",
+            className: "active",
+            },
+            once: true,
+        },
+    });
+
+    let underline02 = CSSRulePlugin.getRule(".underline_anime_02::after");
+
+    gsap.to(underline02, {
+        scrollTrigger: {
+            trigger: ".subsc_course",
+            start: "-=200px",
+            toggleClass: {
+            targets: ".underline_anime_02",
             className: "active",
             },
             once: true,

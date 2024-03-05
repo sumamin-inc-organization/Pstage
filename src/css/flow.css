@@ -254,7 +254,7 @@
     color: var(--white);
     padding-bottom: 2px;
     background-size: 0 100%;
-    transition: background-size 1.5s ease;
+    transition: background-size 1s ease;
 }
 
 .step_item .text p .bg_orange.active {

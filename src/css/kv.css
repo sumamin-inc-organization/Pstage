@@ -85,15 +85,32 @@
 
 .kv_application {
     position: relative;
-    background-image: url(../images/apply_back.svg);
+    background: linear-gradient(135deg,#ff7c4d 0%, #ffb094 36.95%, #ffa382 46.8%, #ff7e4f 60.59%, #ff7c4d 100%);
+    /* background: linear-gradient(135deg,#ff7c4d 0%, #ffb094 18.47%,#ffb094 36.95%, #ffa382 23.4%,#ffa382 46.8%, #ff7e4f 30.29%, #ff7e4f 60.59%, #ff7c4d 100%); */
+    border-radius: 9999px;
+    /* background-image: url(../images/apply_back.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 218px;
     height: 218px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: bggradient 1s ease;
+    animation-delay: 2s;
+}
+
+@keyframes bggradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .kv_application::before {
