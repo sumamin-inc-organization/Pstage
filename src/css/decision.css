@@ -50,7 +50,6 @@
 
 .decision_content {
     display: grid;
-    /* grid-template-columns: 1fr 64.4vw 1fr; */
     grid-template-columns: 1fr 70vw 1fr;
     padding-top: 49px;
 }

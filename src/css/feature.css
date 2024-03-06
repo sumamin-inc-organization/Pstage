@@ -111,7 +111,6 @@
     font-size: min(3.22vw, 44px);
     line-height: min(4.39vw, 60px);
     font-weight: bold;
-    /* margin-top: 88px; */
     white-space: nowrap;
     background: radial-gradient(circle at calc(100% - 1px) calc(100% - 1px), var(--green) 1px, transparent 1px) ,
     radial-gradient(circle at 1px calc(100% - 1px), var(--green) 1px, transparent 1px) ,
@@ -513,9 +512,6 @@
         font-size: min(3.9vw, 15.5px);
         line-height: 40px;
         letter-spacing: 0.01rem;
-        /* font-size: 16px;
-        line-height: 40px;
-        letter-spacing: 0.04rem; */
     }
 
     .merit_caption {
@@ -542,9 +538,6 @@
         font-size: min(3.9vw, 15.5px);
         line-height: 40px;
         letter-spacing: 0.01rem;
-        /* font-size: 16px;
-        line-height: 40px;
-        letter-spacing: 0.04rem; */
     }
 }
 

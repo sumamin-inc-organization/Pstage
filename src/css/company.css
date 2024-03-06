@@ -113,13 +113,6 @@
     cursor: pointer;
 }
 
-/* .top_back_btn::after {
-    position: absolute;
-    content: "";
-    clip-path: polygon(0 100%, 50% 0, 100% 100%);
-    background-color: var(--green);
-} */
-
 @media (max-width: 767px) {
     .company_grid {
         padding-bottom: 41px;

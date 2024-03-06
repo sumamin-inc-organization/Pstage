@@ -45,16 +45,6 @@
     z-index: -10;
 }
 
-.dotted_sp_01 {
-    /* width: 88px;
-    height: 3.67px; */
-}
-
-.dotted_sp_02 {
-    /* width: 139px;
-    height: 3.67px; */
-}
-
 .kv_wrapper {
     margin: 71px  15vw;
     /* margin: 71px  min(16.3vw, 240px); */
@@ -106,10 +96,8 @@
 
 .kv_application_anime::before {
     content: '';
-    /*絶対配置でキラッと光るの位置を決める*/
     position: absolute;
     top: 0%;
-    /*キラッと光る形状*/
     width: 40%;
     height: 100%;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 60%, rgba(255,255,255,.1) 100%);
@@ -224,14 +212,6 @@
     margin-top: 14px;
     font-feature-settings: "palt";
 }
-
-/* .kv_text02 p {
-    padding-bottom: 10px;
-    background-image: radial-gradient(circle at calc(100% - 3px) calc(100% - 3px), var(--orange) 3px, transparent 3px) ;
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    background-size: 16px 6px;
-} */
 
 .kv_text02::after {
     content: url(../images/glass.svg);
@@ -901,10 +881,6 @@
     .kv_bottom_item p {
         width: min(340px, 20.49vw);
     }
-
-    /* .kv_middle_item {
-        margin: auto;
-    } */
 }
 
 @media (max-width: 380px) {

@@ -45,16 +45,6 @@
     line-height: 60px;
 }
 
-.price_headline::after {
-    /* position: absolute;
-    content: "";
-    background-image: url(../images/price_underline.svg);
-    width: 243px;
-    height: 8px;
-    bottom: -8px;
-    left: ; */
-}
-
 .price_content {
     grid-column: 2 / 3;
     display: flex;
@@ -71,17 +61,6 @@
     margin-top: 24px;
     color: var(--white);
 }
-
-/* .price_upper picture {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    width: 100%;
-    z-index: -1;
-} */
 
 .price_upper_arraow {
     width: 5.85vw;
@@ -291,9 +270,6 @@
     padding: min(1.75vw, 24px) 0;
 }
 
-/* .black_btn_wrapper:hover {
-    background-color: #585858;
-} */
 
 .black_btn img {
     width: min(1.3vw, 18px);

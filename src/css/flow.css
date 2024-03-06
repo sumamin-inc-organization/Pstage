@@ -146,30 +146,6 @@
     right: -40px;
 }
 
-/* .supprt_upper p::before {
-    position: absolute;
-    content: "";
-    background-image: url(../images/kirakira_01.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 52px;
-    height: 51px;
-    top: -20px;
-    left: -55px;
-}
-
-.supprt_upper p::after {
-    position: absolute;
-    content: "";
-    background-image: url(../images/kirakira_02.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 33px;
-    height: 42px;
-    bottom: -5px;
-    right: -40px;
-} */
-
 .supprt_upper h3 {
     margin-top: 24px;
     font-size: 58px;
