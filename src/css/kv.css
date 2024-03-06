@@ -102,7 +102,7 @@
     height: 100%;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 60%, rgba(255,255,255,.1) 100%);
     transform: skewX(-45deg);
-    animation: shine02 4.2s infinite ease-in-out;
+    animation: shine02 2.8s infinite ease-in-out;
 }
 
 @keyframes shine02 {
@@ -110,7 +110,7 @@
         left: -60%;
     }
 
-    86% {
+    80% {
         left: -60%;
     }
 
