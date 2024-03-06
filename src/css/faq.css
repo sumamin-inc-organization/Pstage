@@ -291,4 +291,8 @@ a.faq_btn:hover {
     .faq_item {
         max-width: 100%;
     }
+
+    .faq_line {
+        max-width: 700px;
+    }
 }
