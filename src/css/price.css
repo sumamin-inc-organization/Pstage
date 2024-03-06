@@ -506,7 +506,7 @@ a.cta_btn.red_btn img {
 
     .price_upper_arraow {
         width: 47px;
-        bottom: -50px;
+        bottom: -52px;
     }
 
     .course_wrapper {
@@ -625,6 +625,10 @@ a.cta_btn.red_btn img {
         margin-top: 2px;
     }
 
+    .single_course {
+        padding-bottom: 35px;
+    }
+
     .subsc_course {
         padding-bottom: 35px;
     }
@@ -654,6 +658,7 @@ a.cta_btn.red_btn img {
 
     a.cta_btn.red_btn img {
         margin-left: 10px;
+        width: 12px;
     }
 
 }
