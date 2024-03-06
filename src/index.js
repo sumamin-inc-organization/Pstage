@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 trigger: ".price_upper_arraow",
                 start: "-=480px",
                 scrub: false,
-                markers: true
             },
         });
         price_upper_arraow
@@ -154,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 trigger: ".feature_headline",
                 start: "-=400px",
                 scrub: false,
-                markers: true
             },
         });
         speech
