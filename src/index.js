@@ -34,15 +34,15 @@ $(function() {
 /*  出現アニメーション */
 document.addEventListener("DOMContentLoaded", function() {
     /* kvセクション */
-    let kvText01 = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".kv_text01",
-            start: "-=100px",
-            scrub: false,
-        },
-    });
-    kvText01
-    .from(".kv_text01", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
+    // let kvText01 = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: ".kv_text01",
+    //         start: "-=100px",
+    //         scrub: false,
+    //     },
+    // });
+    // kvText01
+    // .from(".kv_text01", { scale: 0, opacity: 0, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
 
     /* featureセクション */
     let speech = gsap.timeline({
