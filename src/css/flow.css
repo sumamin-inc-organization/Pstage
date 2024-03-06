@@ -305,6 +305,10 @@
 
 /*sp*/
 @media (max-width: 767px) {
+    .flow_grid {
+        grid-template-columns: 1fr 90vw 1fr;
+    }
+
     .flow_content {
         padding-bottom: 65px;
     }
