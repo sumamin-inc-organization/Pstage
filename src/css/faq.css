@@ -282,3 +282,13 @@ a.faq_btn:hover {
         -ms-transform: translate(0%, -50%);
     }
 }
+
+@media (min-width: 1500px) {
+    .faq_flex {
+        width: 58.56vw;
+    }
+
+    .faq_item {
+        max-width: 100%;
+    }
+}

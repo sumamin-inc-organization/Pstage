@@ -191,3 +191,9 @@
         letter-spacing: 0.06rem;
     }
 }
+
+@media (min-width: 1500px) {
+    .voice_flex {
+        gap: 3.66vw;
+    }
+}

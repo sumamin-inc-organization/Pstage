@@ -8,6 +8,7 @@
 
 .flow_grid {
     background-color: #FFDDD1;
+    grid-template-columns:1fr 70vw 1fr;
 }
 
 .flow_content {

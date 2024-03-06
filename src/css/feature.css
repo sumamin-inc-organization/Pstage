@@ -55,7 +55,7 @@
 
 .feature_grid {
     display: grid;
-    grid-template-columns: 1fr min(70vw, 960px) 1fr;
+    grid-template-columns: 1fr 70vw 1fr;
     margin-bottom: 38px;
 }
 
@@ -171,7 +171,7 @@
     letter-spacing: 0.04rem;
     line-height: min(1.75vw, 24px);
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: max(1.83vw, 25px);
     display: inline-block;
 }
 
@@ -545,5 +545,12 @@
         /* font-size: 16px;
         line-height: 40px;
         letter-spacing: 0.04rem; */
+    }
+}
+
+@media (min-width: 1500px) {
+    .reason_item .reason_desc .reason_text, .merit_text, .limit_text {
+        letter-spacing: 0.06rem;
+        font-size: max(1.1vw, 18px);
     }
 }

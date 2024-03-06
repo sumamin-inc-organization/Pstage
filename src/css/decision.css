@@ -51,7 +51,7 @@
 .decision_content {
     display: grid;
     /* grid-template-columns: 1fr 64.4vw 1fr; */
-    grid-template-columns: 1fr min(70vw, 960px) 1fr;
+    grid-template-columns: 1fr 70vw 1fr;
     padding-top: 49px;
 }
 
