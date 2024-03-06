@@ -1,5 +1,12 @@
+.green_bg_upper {
+    width: 100vw;
+}
+
+.green_bg_upper img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
 .content_wrapper {
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    background: #E6F3EA;
 }

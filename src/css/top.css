@@ -74,6 +74,7 @@ header {
 }
 
 .header_btn {
+    position: relative;
     background-color: var(--orange);
     padding: 10px 11px;
     border-radius: 10px;
@@ -81,7 +82,36 @@ header {
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
+    overflow: hidden;
 }
+
+.header_btn::before {
+    content: '';
+    /*絶対配置でキラッと光るの位置を決める*/
+    position: absolute;
+    top: 0%;
+    /*キラッと光る形状*/
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 60%, rgba(255,255,255,.1) 100%);
+    transform: skewX(-25deg);
+    animation: shine_header 4.2s infinite ease-in-out;
+}
+
+@keyframes shine_header {
+    0% {
+        left: -26%;
+    }
+
+    86% {
+        left: -26%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
 
 /*ctaの設定*/
 .cta_warpper {
@@ -170,20 +200,6 @@ a.cta_btn::before {
     background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 60%, rgba(255,255,255,.1) 100%);
     transform: skewX(-25deg);
     animation: shine 4.2s infinite ease-in-out;
-}
-
-@keyframes shine {
-    0% {
-        left: -24%;
-    }
-
-    86% {
-        left: -24%;
-    }
-
-    100% {
-        left: 90%;
-    }
 }
 
 /*見出しの設定*/
@@ -480,5 +496,19 @@ footer {
 @media (max-width: 767px) {
     .content_grid {
         grid-template-columns: 1fr 90vw 1fr;
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -24%;
+    }
+
+    86% {
+        left: -24%;
+    }
+
+    100% {
+        left: 90%;
     }
 }

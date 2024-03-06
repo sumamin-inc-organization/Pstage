@@ -273,7 +273,7 @@
 }
 
 .black_btn_wrapper {
-    background-color: var(--black);
+    background-color: var(--red);
     width: min(29.3vw, 400px);
     border-radius: 9999px;
     display: flex;
@@ -291,9 +291,9 @@
     padding: min(1.75vw, 24px) 0;
 }
 
-.black_btn_wrapper:hover {
+/* .black_btn_wrapper:hover {
     background-color: #585858;
-}
+} */
 
 .black_btn img {
     width: min(1.3vw, 18px);
