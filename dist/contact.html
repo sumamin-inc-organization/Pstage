@@ -4,39 +4,145 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Pstage | 自宅でカンタン!おしっこ(Pee)でがんのリスクがわかる</title>
-        <!-- <link rel="icon" type="image/svg" href=""> -->
+        <title>Pstage | 自宅でカンタン！郵便いらずのがん検査キット</title>
+        <link rel="icon" href="data:,">
         <!-- ogp -->
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Pstage | 自宅でカンタン!おしっこ(Pee)でがんのリスクがわかる">
-        <meta property="og:description" content="早期段階でがんリスク可能性を示唆">
+        <meta property="og:title" content="Pstage | 自宅でカンタン！郵便いらずのがん検査キット">
+        <meta property="og:description" content="P-stageは、採取した尿の郵送を必要としない唯一のがんリスク早期発見キットです。">
         <meta property="og:site_name" content="Pstage">
-        <!-- <meta property="og:image" content=""> -->
-        <!-- adobe font -->
-        <script>(function(d) {var config = {kitId: 'ahp1twu',scriptTimeout: 3000,async: true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);</script>
+        <!-- <meta property="og:image" content="../images/common/ogp.jpg"> -->
+        <!-- iOSの数字が青くなるのを防止する -->
+        <meta name="format-detection" content="telephone=no" />
+        <meta content="date=no" name="format-detection" />
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <!-- stylesheet -->
+        <!-- <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/top.css"> -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <!-- <script src="https://unpkg.com/gsap@3.11.0/dist/CSSRulePlugin.min.js"></script> -->
+        <!-- <script src="../index.js"></script> -->
     <script defer src="contact.f6db6518b29a57f9d091.js"></script></head>
-    <main>
-        <section id="contact">
-            <div class="contact_wrapper">
-                <h1>お問い合わせ</h1>
-                <div class="content_grid contact_grid">
-                    <div class="contact_content">
-                        <form action="" method="get" class="form">
-                            <div class="contact_form">
-                                <label for="name">Enter your name: </label>
-                                <input type="text" name="name" id="name" required />
+    <body>
+        <header>
+            <div class="header_inner">
+                <img class="header_logo" src="img/logo.svg" alt="Pstageのロゴ">
+                <button class="header_btn">お申し込み</button>
+            </div>
+        </header>
+        <main>
+            <section id="contact">
+                <div class="green_bg_upper">
+                    <img src="img/green_bg_upper.svg" alt="装飾">
+                </div>
+                <div class="content_wrapper contact_wrapper">
+                    <h2>お問い合わせ</h2>
+                    <div class="content_grid contact_grid">
+                        <div class="content_inner contact_content">
+                            <div class="form_item">
+                                <label for="name">お問い合わせ内容</label>
+                                <div type="text" id="inquiryDetails" name="inquiryDetails">
+                                    <div class="checkbox_item">
+                                        <input type="checkbox" id="checkbox01" name="checkbox01" checked />
+                                        <label for="checkbox01">測定キットについて</label>
+                                    </div>
+                                    <div class="checkbox_item">
+                                        <input type="checkbox" id="checkbox02" name="checkbox02" checked />
+                                        <label for="checkbox02">〇〇について</label>
+                                    </div>
+                                    <div class="checkbox_item">
+                                        <input type="checkbox" id="checkbox03" name="checkbox03" checked />
+                                        <label for="checkbox03">〇〇について</label>
+                                    </div>
+                                    <div class="checkbox_item">
+                                        <input type="checkbox" id="checkbox04" name="checkbox04" checked />
+                                        <label for="checkbox04">〇〇について</label>
+                                    </div>
+                                    <div class="checkbox_item">
+                                        <input type="checkbox" id="checkbox05" name="checkbox05" checked />
+                                        <label for="checkbox05">その他</label>
+                                    </div>
+                                </div>
+                                <div class="form_item">
+                                    <label for="name">お名前</label>
+                                    <input type="text" id="name" name="name" placeholder="山田　太郎">
+                                </div>
+                                <div class="form_item">
+                                    <label for="hurigana">フリガナ</label>
+                                    <input type="text" id="hurigana" name="hurigana" placeholder="ヤマダ　タロウ">
+                                </div>
+                                <div class="form_item">
+                                    <div class="form_item_left">
+                                        <label for="tel">電話番号</label>
+                                        <input type="tel" id="tel" name="tel" placeholder="000-0000-0000">
+                                    </div>
+                                    <div class="form_item_right">
+                                        <label for="mail">メールアドレス</label>
+                                        <input type="mail" id="mail" name="mail" placeholder="info@mail.com">
+                                    </div>
+                                </div>
+                                <div class="form_item">
+                                    <div class="form_item_left">
+                                        <label for="postalCode">郵便番号</label>
+                                        <input type="text" id="postalCode" name="postalCode" placeholder="000-0000">
+                                    </div>
+                                    <div class="form_item_right">
+                                    </div>
+                                </div>
+                                <div class="form_item">
+                                    <div class="form_item_left">
+                                        <label for="prefectures">都道府県</label>
+                                        <input type="text" id="prefectures" name="prefectures" placeholder="ご選択ください">
+                                    </div>
+                                    <div class="form_item_right">
+                                        <label for="municipalities">市区町村</label>
+                                        <input type="text" id="municipalities" name="municipalities" placeholder="○○市">
+                                    </div>
+                                </div>
+                                <div class="form_item">
+                                    <label for="other">それ以降のご住所</label>
+                                    <textarea name="other" id="other" cols="30" rows="10" placeholder="00-0-0 ○○マンション"></textarea>
+                                </div>
+                                <div class="form_item">
+                                    <label for="detail">お問い合わせの詳細</label>
+                                    <textarea name="detail" id="detail" cols="30" rows="10" placeholder="ご自由にご入力ください。"></textarea>
+                                </div>
                             </div>
-                            <div class="contact_form">
-                                <label for="email">Enter your email: </label>
-                                <input type="email" name="email" id="email" required />
-                            </div>
-                            <div class="contact_form">
-                                <input type="submit" value="Subscribe!" />
-                            </div>
-                        </form>
+                        </div>
+                    </div>
+                    <div class="submit_btn">
+                        <input type="submit" value="送信する">
                     </div>
                 </div>
+            </section>
+        </main>
+        <footer>
+            <div class="content_grid footer_grid">
+                <div class="footer_content">
+                    <div class="footer_upper">
+                        <div class="footer_content_left">
+                            <img src="img/footer_logo.svg" alt="Pstageのロゴ">
+                        </div>
+                        <div class="footer_content_right">
+                            <div class="footer_item">
+                                <p class="underline">利用規約・個人情報の取り扱いについて</p>
+                            </div>
+                            <div class="footer_item">
+                                <p class="underline">特定商取引法に関する表き</p>
+                            </div>
+                            <div class="footer_item">
+                                <p>お問い合わせ先</p>
+                                <p>mail : pstage@tw3s.jp</p>
+                                <p>tel : 050-5443-6775</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_copy">©2024 Pstage All Rights Reserved.</div>
+                </div>
             </div>
-        </section>
-    </main>
+        </footer>
+    </body>
 </html>
