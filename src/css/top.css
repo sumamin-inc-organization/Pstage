@@ -323,6 +323,7 @@ footer {
 
 .footer_content_right {
     margin-top: 40px;
+    margin-right: 14vw;
 }
 
 .footer_item {
@@ -474,6 +475,7 @@ footer {
     
     .footer_content_right {
         margin-top: 43px;
+        margin-right: 0;
     }
     
     .footer_item {
