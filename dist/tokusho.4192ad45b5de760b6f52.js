@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!************************!*\
-  !*** ./src/contact.js ***!
+  !*** ./src/tokusho.js ***!
   \************************/
 
 /******/ })()

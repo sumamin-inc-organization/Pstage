@@ -98,21 +98,6 @@
     min-width: 32px;
 }
 
-.top_back_wrapper {
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 61px;
-}
-
-.top_back_btn {
-    font-size: 20px;
-    letter-spacing: 0.06rem;
-    color: var(--green);
-    position: relative;
-    cursor: pointer;
-}
-
 @media (max-width: 767px) {
     .company_grid {
         padding-bottom: 41px;
@@ -180,10 +165,4 @@
         padding-left: 0;
         font-feature-settings: "palt";
     }
-
-    .top_back_wrapper {
-        justify-content: center;
-        margin-top: 42px;
-    }
-    
 }

@@ -4,9 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const pages = [
   "index",
-  "faq",
-  "contact",
-  "application"
+  "tokusho"
 ];
 module.exports = {
   mode: "development",

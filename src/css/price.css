@@ -382,7 +382,7 @@ a.cta_btn.red_btn img {
     z-index: -1;
 }
 
-.subsc_course::after {
+.subsc_course_hukidashi {
     position: absolute;
     content: "";
     background-image: url(../images/course_deco_01.svg);
@@ -633,7 +633,7 @@ a.cta_btn.red_btn img {
         padding-bottom: 35px;
     }
 
-    .subsc_course::after {
+    .subsc_course_hukidashi {
         width: 83px;
         height: 83px;
         top: 18px;

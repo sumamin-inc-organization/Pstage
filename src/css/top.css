@@ -13,7 +13,7 @@
 html {
     font-family: "Noto Sans JP", sans-serif;
     color: var(--black);
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 html, body {
@@ -27,6 +27,22 @@ body {
 main {
     display: block;
     width: 100%;
+}
+
+.top_back_wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 61px;
+}
+
+.top_back_btn {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.06rem;
+    color: var(--green);
+    position: relative;
+    cursor: pointer;
 }
 
 /*pc, sp表示非表示切り替え*/
@@ -483,6 +499,12 @@ footer {
     .footer_copy {
         text-align: center;
     }
+
+    .top_back_wrapper {
+        justify-content: center;
+        margin-top: 42px;
+    }
+    
 }
 
 /*レイアウトの設定*/

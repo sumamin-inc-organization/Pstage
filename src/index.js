@@ -31,6 +31,20 @@ $(function() {
     });
 });
 
+document.querySelectorAll('.CTA a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+
 /*  出現アニメーション */
 document.addEventListener("DOMContentLoaded", function() {
     // レスポンシブ対応
@@ -82,8 +96,6 @@ document.addEventListener("DOMContentLoaded", function() {
         price_upper_arraow
         .from(".price_upper_arraow", { y: -10, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
 
-        let hukidashi = CSSRulePlugin.getRule(".subsc_course::after");
-
         let  subscCourse = gsap.timeline({
             scrollTrigger: {
                 trigger: ".subsc_course",
@@ -92,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         });
         subscCourse
-        .to(hukidashi, { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"});
+        .to(".subsc_course_hukidashi", { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"});
 
         let  course_decoration_text = gsap.timeline({
             scrollTrigger: {
@@ -192,8 +204,6 @@ document.addEventListener("DOMContentLoaded", function() {
         price_upper_arraow
         .from(".price_upper_arraow", { y: -10, duration: 0.5, ease: "Power4.easeOut"}, "+=0.4");
 
-        let hukidashi = CSSRulePlugin.getRule(".subsc_course::after");
-
         let  subscCourse = gsap.timeline({
             scrollTrigger: {
                 trigger: ".subsc_course",
@@ -202,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         });
         subscCourse
-        .to(hukidashi, { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"});
+        .to(".subsc_course_hukidashi", { scale: 1, opacity: 1, duration: 0.5, ease: "Power4.easeOut"});
 
         let  course_decoration_text = gsap.timeline({
             scrollTrigger: {

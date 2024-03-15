@@ -1,0 +1,82 @@
+#tokusho {
+    margin-top: 160px;
+    margin-bottom: 80px;
+}
+
+.tokusho_wrapper h1 {
+    font-size: 30px;
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tokusho_grid {
+    padding-top: 80px;
+}
+
+.tokusho_content {
+    grid-column: 2 / 3;
+}
+
+.tokusho_table tr {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #82C195;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.tokusho_table th {
+    min-width: 180px;
+    width: 180px;
+    color: #82C195;
+}
+
+.tokusho_table td img {
+    width: 400px;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #FFF;
+}
+
+@media (max-width: 767px) {
+    #tokusho {
+        margin-bottom: 40px;
+    }
+
+    .tokusho_grid {
+        padding-top: 40px;
+    }
+
+    .tokusho_grid {
+        grid-template-columns: 1fr 89.8vw 1fr;
+    }
+
+    .tokusho_table tr {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+        border-bottom: 1px solid #82C195;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.06rem;
+        line-height: 24px;
+    }
+    
+    .tokusho_table th {
+        width: 100%;
+    }
+    
+
+    .tokusho_table td img {
+        width: 350px;
+    }
+}
