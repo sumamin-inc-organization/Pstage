@@ -1,6 +1,6 @@
 #tokusho {
-    margin-top: 160px;
-    margin-bottom: 80px;
+    padding-top: 160px;
+    padding-bottom: 80px;
 }
 
 .tokusho_wrapper h1 {
@@ -48,7 +48,7 @@ footer {
 
 @media (max-width: 767px) {
     #tokusho {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 
     .tokusho_grid {
