@@ -318,6 +318,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .footer_content_right {
@@ -460,6 +461,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 60px;
     }
     
     .footer_content_left {
