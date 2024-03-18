@@ -128,7 +128,7 @@
     border: 2px solid var(--white);
 }
 
-.kv_application::after {
+/* .kv_application::after {
     position: absolute;
     content: "";
     width: 116px;
@@ -137,7 +137,7 @@
     background-size: contain;
     top: -20px;
     visibility: visible;
-}
+} */
 
 .kv_application p {
     color: var(--white);
